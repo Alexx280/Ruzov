@@ -1,0 +1,107 @@
+body {
+  background-color: #eaecee;
+}
+.main {
+  position: relative;
+  width: 960px;
+  height: 300px;
+  margin: 0 auto;
+  //border: 1px solid black;
+}
+
+.logo{
+  height: 75px;
+  width: auto;
+  margin-top: 10px;
+}
+
+.menu {
+  width:  695px;
+  height: 45px;
+  background-color: white;
+  border-radius: 5px;
+  float: right;
+  margin-top: 25px;
+  box-shadow: 1px 1px 4px gray;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 7px;
+  padding-left: 25px;
+  div {
+    width: auto;
+    height: auto;
+    //background-color: greenyellow;
+    display: inline;
+    div {margin-right: 10px}
+
+  }
+
+  .find {
+    width: 155px;
+    height: 26px;
+    background-color: #eaecee;
+    border: 1px solid gray;
+    border-radius: 5px;
+
+  }
+  .find_button {
+    position: absolute;
+    right: 7px;
+    float: right;
+    height: 28px;
+  }
+}
+.head {
+  background-color: white;
+  position: relative;
+  top: 10px;
+  height: 340px;
+  width: 960px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px gray;
+  .monitor {
+    width: 938px;
+    height: 320px;
+    //background-image: url('pic/fon_moniror.png');
+    border: 1px solid black;
+    position: relative;
+    top: 10px;
+    margin: 10px;
+    overflow: hidden;
+    ul {
+      margin-top: -2px;
+      margin-left: -40px;
+      width: 9400px;
+      height: 320px;
+      li {float: left}
+    }
+    .arrow {
+      position: absolute;
+      top: 150px;
+      height: 50px;
+      width: 50px;
+      background-color: red;
+
+    }
+  }
+}
+.arrow {
+  position: absolute;
+  top: 150px;
+}
+#next {
+  left: 880px;
+  height: 48px;
+  width: 48px;
+  background-image: url('pic/Right_arrow.png');
+  &:hover {background-image: url('pic/Right_arrow_over.png');}
+}
+#previous {
+  left: 125px;
+  height: 48px;
+  width: 48px;
+  background-image: url('pic/Left_arrow.png');
+  &:hover {background-image: url('pic/Left_arrow_over.png');}
+
+}
