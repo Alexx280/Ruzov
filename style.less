@@ -1,3 +1,8 @@
+@height_area: 625px;
+@top_area: 25px;
+@radius: 5px;
+@width_area:240px;
+
 body {
   background-color: #eaecee;
 }
@@ -19,7 +24,7 @@ body {
   width:  695px;
   height: 45px;
   background-color: white;
-  border-radius: 5px;
+  border-radius: @radius;
   float: right;
   margin-top: 25px;
   box-shadow: 1px 1px 4px gray;
@@ -42,7 +47,7 @@ body {
     height: 26px;
     background-color: #eaecee;
     border: 1px solid gray;
-    border-radius: 5px;
+    border-radius: @radius;
 
   }
   .find_button {
@@ -58,7 +63,7 @@ body {
   top: 10px;
   height: 340px;
   width: 960px;
-  border-radius: 5px;
+  border-radius: @radius;
   box-shadow: 0 0 2px gray;
   .monitor {
     width: 938px;
@@ -103,5 +108,66 @@ body {
   width: 48px;
   background-image: url('pic/Left_arrow.png');
   &:hover {background-image: url('pic/Left_arrow_over.png');}
-
+}
+.left_block {
+  top: @top_area;
+  width: @width_area;
+  height: @height_area;
+  display: inline-block;
+  position: relative;
+  .autor_area {
+    background-color: white;
+    position: relative;
+    height: 380px;
+    width: @width_area;
+    border-radius: @radius;
+    box-shadow: 0 0 2px gray;
+  }
+  .shop_area {
+    background-color: #233048;
+    position: relative;
+    top: 25px;
+    float: right;
+    height: 220px;
+    width: @width_area;
+    border-radius: @radius;
+    box-shadow: 0 0 2px gray;
+  }
+}
+.main_area {
+  position: inherit;
+  display: inline-block;
+  top: @top_area;
+  height: @height_area;
+  width: @width_area*2;
+  //background-color: brown;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+.right_block {
+  top: @top_area;
+  width: @width_area;
+  height: @height_area;
+  display: inline-block;
+  position: relative;
+  .video_area {
+    background-color: #233048;
+    position: inherit;
+    display: inline-block;
+    float: right;
+    height: 220px;
+    width: @width_area;
+    border-radius: @radius;
+    box-shadow: 0 0 2px gray;
+  }
+  .chanal_area {
+    background-color: #aa99ff;
+    position: inherit;
+    top: 30px;
+    display: inline-block;
+    float: right;
+    height: 371px;
+    width: 236px;
+    border: 2px solid orange;
+  }
 }
