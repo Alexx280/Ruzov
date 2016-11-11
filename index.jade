@@ -1,48 +1,58 @@
-doctype html
+//doctype html
 
-html
+//html
     head
         title Точка входа в мир востока
         link(rel='stylesheet/less' type='text/css' href='style.less')
         script(src='less.js', type='text/javascript')
         script(src='jQuery.js', type='text/javascript')
     body
-        div.main
-            img.logo(src="pic/logo_ruzov_c3.png")
-            div.menu
-                div.autor
-                    div Автор
-                    img.arow(src="pic/strelka_menu.png")
-                div.spirit_part
-                    div Духовный раздел
-                    img.arow(src="pic/strelka_menu.png")
-                div.doing_part
-                    div Практический раздел
-                    img.arow(src="pic/strelka_menu.png")
-                div.project
-                    div Проекты
-                    img.arow(src="pic/strelka_menu.png")
-                div.find
-                img.find_button(src="pic/Find.png")
-            div.head
-                div.monitor#slider
-                    ul
-                        li(type="none")
-                            img(src="pic/fon_monitor.png")
-                        li(type="none")
-                            img(src="pic/fon_monitor1.png")
-                        li(type="none")
-                            img(src="pic/fon_monitor2.png")
-                        li(type="none")
-                            img(src="pic/fon_monitor3.png")
-                div.arrow#previous
-                div.arrow#next
-            div.left_block
-                div.autor_area
-                div.shop_area
-            div.main_area
-            div.right_block
-                div.video_area
-                div.chanal_area
+extends tamplate/head
+
+block content
+    div.main
+        img.logo(src="pic/logo_ruzov_c3.png")
+        div.menu
+            div.autor
+                div Автор
+                img.arow(src="pic/strelka_menu.png")
+            div.spirit_part
+                div Духовный раздел
+                img.arow(src="pic/strelka_menu.png")
+            div.doing_part
+                div Практический раздел
+                img.arow(src="pic/strelka_menu.png")
+            div.project
+                div Проекты
+                img.arow(src="pic/strelka_menu.png")
+            div.find
+            img.find_button(src="pic/Find.png")
+        div.head
+            div.monitor#slider
+                ul
+                    li(type="none")
+                        img(src="pic/fon_monitor.png")
+                    li(type="none")
+                        img(src="pic/fon_monitor1.png")
+                    li(type="none")
+                        img(src="pic/fon_monitor2.png")
+                    li(type="none")
+                        img(src="pic/fon_monitor3.png")
+            div.arrow#previous
+            div.arrow#next
+        .left_block
+            div.autor_area
+                div.icon_autor
+                div.support_button
+            div.shop_area
+        .main_area
+            div.icon_seminar
+            //video(width="230" height="13" controls="controls")
+                source(src="https://www.youtube.com/embed/9CGt8VJI510")
+        .right_block
+            div.video_area
+                iframe(width="220" height="125" src="https://www.youtube.com/embed/9CGt8VJI510" frameborder="0")
+            div.chanal_area
+    .main2
 
 script(src='slider.js', type='text/javascript')
