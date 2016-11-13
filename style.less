@@ -6,6 +6,7 @@
 
 body {
   background-color: #eaecee;
+  margin:0;
 }
 .main, .main2 {
   position: relative;
@@ -15,7 +16,7 @@ body {
   //border: 1px solid black;
 }
 .main2 {
-  background-color: rgb(0, 180, 200);
+  background-color: #768C9F;
   width: 100%;
   height: 450px;
 }
@@ -155,7 +156,7 @@ body {
     background-image: url('pic/dobro_shop.png');
   }
 }
-.main_area {
+.center_block {
   position: inherit;
   display: inline-block;
   top: @top_area;
@@ -192,7 +193,7 @@ body {
     padding: 10px;
   }
   .chanal_area {
-    background-color: #aa99ff;
+    background-color: #26344B;
     position: inherit;
     top: 30px;
     display: inline-block;
@@ -200,5 +201,40 @@ body {
     height: 371px;
     width: 236px;
     border: 2px solid orange;
+  }
+}
+.footer {
+  position: relative;
+  width: 960px;
+  height: 125px;
+  //border: 1px solid black;
+  margin: 0 auto;
+  img {
+    position: relative;
+    top: 15px;
+  }
+  .support_button {
+    position: absolute;
+    top: 35px;
+    left:290px;
+    height: 48px;
+    width: 221px;
+    .image('pic/Support_project_small.png','pic/Support_project_small_over.png');
+  }
+  .consult_button {
+    position: absolute;
+    top: 35px;
+    left: 538px;
+    height: 48px;
+    width: 221px;
+    .image('pic/Consult.png','pic/Consult_over.png');
+    background-repeat: no-repeat;
+    }
+  .rights {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 150px;
+    height: 65px;
   }
 }

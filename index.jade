@@ -10,9 +10,10 @@
 extends tamplate/head
 
 block content
-    div.main
-        img.logo(src="pic/logo_ruzov_c3.png")
-        div.menu
+    .main
+        //img.logo(src="pic/logo_ruzov_c3.png")
+        include Tamplate/menu
+        //div.menu
             div.autor
                 div Автор
                 img.arow(src="pic/strelka_menu.png")
@@ -27,7 +28,7 @@ block content
                 img.arow(src="pic/strelka_menu.png")
             div.find
             img.find_button(src="pic/Find.png")
-        div.head
+        .head
             div.monitor#slider
                 ul
                     li(type="none")
@@ -45,7 +46,7 @@ block content
                 div.icon_autor
                 div.support_button
             div.shop_area
-        .main_area
+        .center_block
             div.icon_seminar
             //video(width="230" height="13" controls="controls")
                 source(src="https://www.youtube.com/embed/9CGt8VJI510")
@@ -54,5 +55,6 @@ block content
                 iframe(width="220" height="125" src="https://www.youtube.com/embed/9CGt8VJI510" frameborder="0")
             div.chanal_area
     .main2
+    include tamplate/footer
 
-script(src='slider.js', type='text/javascript')
+
