@@ -1,33 +1,8 @@
-//doctype html
-
-//html
-    head
-        title Точка входа в мир востока
-        link(rel='stylesheet/less' type='text/css' href='style.less')
-        script(src='less.js', type='text/javascript')
-        script(src='jQuery.js', type='text/javascript')
-    body
 extends tamplate/head
 
 block content
     .main
-        //img.logo(src="pic/logo_ruzov_c3.png")
         include Tamplate/menu
-        //div.menu
-            div.autor
-                div Автор
-                img.arow(src="pic/strelka_menu.png")
-            div.spirit_part
-                div Духовный раздел
-                img.arow(src="pic/strelka_menu.png")
-            div.doing_part
-                div Практический раздел
-                img.arow(src="pic/strelka_menu.png")
-            div.project
-                div Проекты
-                img.arow(src="pic/strelka_menu.png")
-            div.find
-            img.find_button(src="pic/Find.png")
         .head
             div.monitor#slider
                 ul
@@ -55,6 +30,12 @@ block content
                 iframe(width="220" height="125" src="https://www.youtube.com/embed/9CGt8VJI510" frameborder="0")
             div.chanal_area
     .main2
+        .main
+    .inform_area
+        .main
+    .bottom_links_area
+        .main
+
     include tamplate/footer
 
 
