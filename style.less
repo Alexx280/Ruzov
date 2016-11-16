@@ -3,27 +3,29 @@
 @radius: 5px;
 @width_area:240px;
 @icon: 30px;
+.shadow(){
+  box-shadow: 0 0 3px gray;}
 
+.icon(@top, @left, @src){
+  position: absolute;
+  top: @top;
+  left:@left;
+  height: 30px;
+  width: 30px;
+  //background-color: red;
+  background: url(@src);
+  background-repeat: space;
+}
 body {
   background-color: #eaecee;
   margin:0;
 }
-.main, .main2 {
+.main, .schedule_area {
   position: relative;
   width: 960px;
   height: 1130px;
   margin: 0 auto;
   //border: 1px solid black;
-}
-.main2 {
-  background-color: #768C9F;
-  width: 100%;
-  height: 450px;
-  .main {
-    height: 450px;
-    background-color: antiquewhite;
-  }
-
 }
 .logo{
   height: 75px;
@@ -46,7 +48,6 @@ body {
   div {
     width: auto;
     height: auto;
-    //background-color: greenyellow;
     display: inline;
     div {margin-right: 10px}
   }
@@ -71,11 +72,10 @@ body {
   height: 340px;
   width: 960px;
   border-radius: @radius;
-  box-shadow: 0 0 2px gray;
+  .shadow;
   .monitor {
     width: 938px;
     height: 320px;
-    //background-image: url('pic/fon_moniror.png');
     border: 1px solid black;
     position: relative;
     top: 10px;
@@ -107,16 +107,12 @@ body {
   height: 48px;
   width: 48px;
   .image('pic/Right_arrow.png','pic/Right_arrow_over.png');
-  //background-image: url('pic/Right_arrow.png');
-  //&:hover {background-image: url('pic/Right_arrow_over.png');}
 }
 #previous {
   left: 125px;
   height: 48px;
   width: 48px;
   .image('pic/Left_arrow.png','pic/Left_arrow_over.png');
-  //background-image: url('pic/Left_arrow.png');
-  //&:hover {background-image: url('pic/Left_arrow_over.png');}
 }
 .left_block {
   top: @top_area;
@@ -130,15 +126,16 @@ body {
     height: 380px;
     width: @width_area;
     border-radius: @radius;
-    box-shadow: 0 0 2px gray;
+    .shadow;
     .icon_autor {
-      position: relative;
+      .icon (15px; 15px; 'pic/Autor.png');
+      /*position: relative;
       top: 15px;
       left:15px;
       height: @icon;
       width: @icon;
       background: url('pic/Autor.png');
-      background-repeat: space;}
+      background-repeat: space;*/}
     .support_button {
       position: absolute;
       bottom: 15px;
@@ -146,8 +143,6 @@ body {
       height: 56px;
       width: 211px;
       .image('pic/Support_project_button.png','pic/Support_project_button_over.png');
-      //background-image: url('pic/Support_project_button.png');
-      //&:hover {background-image: url('pic/Support_project_button_over.png');}
     }
   }
   .shop_area {
@@ -157,7 +152,7 @@ body {
     height: 234px;
     width: @width_area;
     border-radius: @radius;
-    box-shadow: 0 0 2px gray;
+    .shadow;
     background-image: url('pic/dobro_shop.png');
   }
 }
@@ -167,17 +162,27 @@ body {
   top: @top_area;
   height: @height_area;
   width: @width_area*2;
-  //background-color: brown;
   margin-left: -4px;
   margin-right: -4px;
   .icon_seminar {
-    position: relative;
+    .icon (10px; 25px; 'pic/Seminar.png');
+    /*position: relative;
     top: 10px;
     left: 25px;
     height: @icon;
     width: @icon;
     background: url('pic/Seminar.png');
-    background-repeat: space;
+    background-repeat: space;*/
+  }
+  .new_on_site {
+    position: absolute;
+    top: 195px;
+    left: 20px;
+    width: 440px;
+    border-top: 2px solid lightgray;
+    .new_icon {
+      .icon(35px, 0, 'pic/new.png')
+    }
   }
 }
 .right_block {
@@ -194,7 +199,7 @@ body {
     height: 220px;
     width: @width_area - 20px;
     border-radius: @radius;
-    box-shadow: 0 0 2px gray;
+    .shadow;
     padding: 10px;
   }
   .chanal_area {
@@ -208,11 +213,75 @@ body {
     border: 2px solid orange;
   }
 }
+.schedule_area {
+  background-color: #768C9F;
+  width: 100%;
+  height: 450px;
+  .main {
+    height: 450px;
+    background-color: antiquewhite;
+  }
+}
+.inform_area {
+  .main {
+    height: 1110px;
+    background-color: antiquewhite;
+    .doing_and_spirit {
+      background-color: cadetblue;
+      height: 270px;
+      width: auto;
+    }
+    .last_news {
+      background-color: lightcoral;
+      height: 390px;
+      width: auto;
+      .last_news_icon {
+        .icon(0,0, 'pic/Last_news.png');
+      }
+    }
+    .answer_on_qwestion {
+      position: absolute;
+      background-color: #ffffff;
+      border-radius: @radius;
+      bottom: 55px;
+      height: 390px;
+      width: 700px;
+      .shadow();
+      /*.icon_ask {
+        position: relative;
+        top: 28px;
+        left:20px;
+        height: @icon;
+        width: @icon;
+        background: url('pic/answer_on_quesrion.png');
+        background-repeat: space;}*/
+      .ask_icon {
+        .icon(28px, 20px, 'pic/answer_on_quesrion.png');}
+      .ask_question_button {
+        position: absolute;
+        bottom: 18px;
+        right: 18px;
+        height: 43px;
+        width: 210px;
+        .image('pic/ask_question.png','pic/ask_question_over.png');
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+.bottom_links_area {
+  .schedule_area;
+  height: 255px;
+  background-color: #26344B;
+  .main {
+    background-color: darkolivegreen;
+    height: 255px;
+  }
+}
 .footer {
   position: relative;
   width: 960px;
   height: 125px;
-  //border: 1px solid black;
   margin: 0 auto;
   img {
     position: relative;
@@ -234,28 +303,12 @@ body {
     width: 221px;
     .image('pic/Consult.png','pic/Consult_over.png');
     background-repeat: no-repeat;
-    }
+  }
   .rights {
     position: absolute;
     top: 35px;
     right: 0;
     width: 150px;
     height: 65px;
-  }
-}
-.inform_area {
-  .main {
-    height: 1110px;
-    background-color: antiquewhite;
-  }
-}
-
-.bottom_links_area {
-  .main2;
-  height: 255px;
-  background-color: #26344B;
-  .main {
-    background-color: darkolivegreen;
-    height: 255px;
   }
 }
