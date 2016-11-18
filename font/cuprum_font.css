@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Cuprum';
+    src: local('Cuprum'), local('Cuprum-Regular'), url('http://64424.selcdn.ru/webfonts/cuprum/400.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/cuprum/400.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cuprum';
+    src: local('Cuprum Italic'), local('Cuprum-Italic'), url('http://64424.selcdn.ru/webfonts/cuprum/400i.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/cuprum/400i.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Cuprum';
+    src: local('Cuprum Bold'), local('Cuprum-Bold'), url('http://64424.selcdn.ru/webfonts/cuprum/700.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/cuprum/700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cuprum';
+    src: local('Cuprum Bold Italic'), local('Cuprum-BoldItalic'), url('http://64424.selcdn.ru/webfonts/cuprum/700i.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/cuprum/700i.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+.text_seminar {
+    font-family: 'Cuprum', serif;
+}

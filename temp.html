@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<link rel="stylesheet" href="http://balance-tv.ru/plyr/plyr.css">
+
+<script>
+
+</script>
+
+<div id="trans">
+    <div id="trans_tv">
+        <div tabindex="0" class="plyr plyr--video plyr--fullscreen-enabled plyr--muted plyr--ready plyr--playing plyr--hide-controls">
+            <div class="plyr__video-wrapper" style="cursor: pointer;">
+                <div class="plyr__captions"></div>
+                <video preload="none" id="player" autoplay="" crossorigin="" style="width: 250px; height: 140px;" src="blob:http://www.ruzov.ru/bb91a0e5-f37b-4d5a-a0cf-bdb61d11d64b" class="plyr--setup"></video>
+            </div>
+            <button type="button" data-plyr="play" class="plyr__play-large" aria-label="Play">
+                <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plyr-play"></use>
+                </svg>
+                <span class="plyr__sr-only">Play</span>
+            </button>
+            <div class="plyr__controls">
+                <button type="button" data-plyr="play" aria-label="Play">
+                    <svg>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plyr-play"></use>
+                    </svg>
+                    <span class="plyr__sr-only">Play</span>
+                </button>
+                <button type="button" data-plyr="pause">
+                    <svg>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plyr-pause"></use>
+                    </svg>
+                    <span class="plyr__sr-only">Pause</span>
+                </button>
+                <button type="button" data-plyr="hd" onclick="javascript: hdPlay()">
+                    <div class="shd1" id="hdbut">HD</div>
+                </button>
+                <button type="button" data-plyr="mute" aria-pressed="true">
+                    <svg class="icon--muted">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plyr-muted"></use>
+                    </svg>
+                    <svg>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plyr-volume"></use>
+                    </svg>
+                    <span class="plyr__sr-only">Toggle Mute</span>
+                </button>
+                <span class="plyr__volume">
+                    <label for="volume3159" class="plyr__sr-only">Volume</label>
+                    <input id="volume3159" class="plyr__volume--input" type="range" min="0" max="10" value="10" data-plyr="volume">
+                    <progress class="plyr__volume--display" max="10" value="0" role="presentation"></progress>
+                </span>
+                <button type="button" data-plyr="captions">
+                    <svg class="icon--captions-on">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plyr-captions-on"></use>
+                    </svg>
+                    <svg>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plyr-captions-off"></use>
+                    </svg>
+                    <span class="plyr__sr-only">Toggle Captions</span>
+                </button>
+                <button type="button" data-plyr="fullscreen" aria-pressed="false">
+                    <svg class="icon--exit-fullscreen">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plyr-exit-fullscreen"></use>
+                    </svg>
+                    <svg>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plyr-enter-fullscreen"></use>
+                    </svg>
+                    <span class="plyr__sr-only">Toggle Fullscreen</span>
+                </button>
+            </div>
+        </div>
+        <script ></script>
+        <script ></script>
+        <script>
+        </script>
+    </div>
+</div>
+</body>
+</html>

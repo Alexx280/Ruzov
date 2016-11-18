@@ -16,6 +16,41 @@
   background: url(@src);
   background-repeat: space;
 }
+.head_text(@top, @left) {
+  position: absolute;
+  top:@top;
+  left:@left;
+  width: 400px;
+  height: 50px;
+  font-family: 'Cuprum', serif;
+  font-size: 25px;
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  src: local('Cuprum'), local('Cuprum-Regular'), url('http://64424.selcdn.ru/webfonts/cuprum/400.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/cuprum/400.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cuprum';
+  src: local('Cuprum Italic'), local('Cuprum-Italic'), url('http://64424.selcdn.ru/webfonts/cuprum/400i.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/cuprum/400i.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Cuprum';
+  src: local('Cuprum Bold'), local('Cuprum-Bold'), url('http://64424.selcdn.ru/webfonts/cuprum/700.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/cuprum/700.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cuprum';
+  src: local('Cuprum Bold Italic'), local('Cuprum-BoldItalic'), url('http://64424.selcdn.ru/webfonts/cuprum/700i.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/cuprum/700i.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
 body {
   background-color: #eaecee;
   margin:0;
@@ -130,13 +165,10 @@ body {
     .shadow;
     .icon_autor {
       .icon (15px; 15px; 'pic/Autor.png');
-      /*position: relative;
-      top: 15px;
-      left:15px;
-      height: @icon;
-      width: @icon;
-      background: url('pic/Autor.png');
-      background-repeat: space;*/}
+    };
+    .text_autor {
+      .head_text(12px; 50px;)
+    };
     .support_button {
       position: absolute;
       bottom: 15px;
@@ -167,13 +199,9 @@ body {
   margin-right: -4px;
   .icon_seminar {
     .icon (10px; 25px; 'pic/Seminar.png');
-    /*position: relative;
-    top: 10px;
-    left: 25px;
-    height: @icon;
-    width: @icon;
-    background: url('pic/Seminar.png');
-    background-repeat: space;*/
+  }
+  .text_seminar {
+    .head_text(10px; 55px;)
   }
   .new_on_site {
     position: absolute;
@@ -185,6 +213,10 @@ body {
       .icon(35px, 0, 'pic/new.png')
     }
   }
+  .text_new {
+    .head_text(230px; 55px;)
+  }
+
 }
 .right_block {
   top: @top_area;
@@ -204,14 +236,13 @@ body {
     padding: 10px;
   }
   .chanal_area {
-    background-color: #26344B;
+    background-image: url('pic/our_channal.png');
     position: inherit;
-    top: 30px;
+    top: 15px;
     display: inline-block;
     float: right;
-    height: 371px;
-    width: 236px;
-    border: 2px solid orange;
+    height: 400px;
+    width: @width_area;
   }
 }
 .schedule_area {
@@ -220,7 +251,57 @@ body {
   height: 450px;
   .main {
     height: 450px;
-    background-color: antiquewhite;
+    //background-color: antiquewhite;
+    .text_schedule {
+      .head_text(15px; 10px;);
+      color: white;
+    }
+    .shop_buy {
+      position: absolute;
+      right: 0;
+      width: 250px;
+      height: 300px;
+      .head_shop_buy {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        width: 227px;
+        height: 35px;
+        background-image: url('pic/shop_small.png');
+      }
+      .body_shop_buy {
+        position: absolute;
+        top: 55px;
+        right: 5px;
+        width: 240px;
+        height: 520px;
+        background-color: #ffffff;
+        z-index: 2;
+        border-radius: @radius;
+          .book_img {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            width: 210px;
+            height: 200px;
+            background-image: url("pic/book.png");
+            background-position: bottom;
+          }
+          .book_article {
+            .head_text(15px; 10px;);
+            width: 200px;
+            top: 220px;
+          }
+          .buy_button {
+            position: absolute;
+            bottom: 15px;
+            left:20px;
+            height: 33px;
+            width: 200px;
+            .image('pic/Buy.png','pic/Buy_over.png');
+          }
+      }
+    }
   }
 }
 .inform_area {
@@ -240,6 +321,9 @@ body {
         .icon(0,0, 'pic/Last_news.png');
       }
     }
+    .text_last_news {
+      .head_text(0; 35px);
+    }
     .answer_on_qwestion {
       position: absolute;
       background-color: #ffffff;
@@ -248,16 +332,11 @@ body {
       height: 390px;
       width: 700px;
       .shadow();
-      /*.icon_ask {
-        position: relative;
-        top: 28px;
-        left:20px;
-        height: @icon;
-        width: @icon;
-        background: url('pic/answer_on_quesrion.png');
-        background-repeat: space;}*/
       .ask_icon {
         .icon(28px, 20px, 'pic/answer_on_quesrion.png');}
+      .text_ask {
+        .head_text(25px; 55px);
+      }
       .ask_question_button {
         position: absolute;
         bottom: 18px;
