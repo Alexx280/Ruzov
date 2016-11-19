@@ -25,6 +25,38 @@
   font-family: 'Cuprum', serif;
   font-size: 25px;
 }
+.link_next(@top, @wid, @rig) {
+  position: absolute;
+  top: @top;
+  right: @rig;
+  width: @wid;
+  height: 20px;
+  font-weight: bold;
+  font-size: 12px;
+  a {color: #16557C;
+    &:hover {
+      color: orange;
+    }
+  }
+}
+.chapter {
+  position: relative;
+  display: inline-block;
+  background-color: lightgreen;
+  width: 332px;
+  height: 200px;
+  margin-left: 15px;
+  top: 25px;
+}
+.news {
+  position: relative;
+  display: inline-block;
+  top: 45px;
+  margin-left: 10px;
+  height: 275px;
+  width: 180px;
+  background-color: lightgreen;
+}
 
 @font-face {
   font-family: 'Cuprum';
@@ -203,6 +235,21 @@ body {
   .text_seminar {
     .head_text(10px; 55px;)
   }
+  .text_next {
+    /*position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 100px;
+    height: 20px;
+    font-weight: bold;
+    font-size: 12px;
+    a {color: #16557C;
+      &:hover {
+      color: orange;
+      }
+    }*/
+    .link_next(15px, 100px, 15px)
+  }
   .new_on_site {
     position: absolute;
     top: 195px;
@@ -256,6 +303,17 @@ body {
       .head_text(15px; 10px;);
       color: white;
     }
+    .link_contact {
+      position: absolute;
+      top: 20px;
+      left: 450px;
+      width: 250px;
+      height: 20px;
+      font-weight: bold;
+      font-size: 13px;
+      a {color: #ffffff;
+      }
+    }
     .shop_buy {
       position: absolute;
       right: 0;
@@ -288,9 +346,18 @@ body {
             background-position: bottom;
           }
           .book_article {
-            .head_text(15px; 10px;);
+            .head_text(15px; 15px;);
             width: 200px;
             top: 220px;
+            font-size: 21px;
+          }
+          .book_about {
+            position: absolute;
+            top: 310px;
+            right: 15px;
+            width: 210px;
+            height: 200px;
+            font-size: 14px;
           }
           .buy_button {
             position: absolute;
@@ -307,22 +374,39 @@ body {
 .inform_area {
   .main {
     height: 1110px;
-    background-color: antiquewhite;
+    //background-color: antiquewhite;
     .doing_and_spirit {
-      background-color: cadetblue;
+      //background-color: cadetblue;
       height: 270px;
       width: auto;
-    }
-    .last_news {
-      background-color: lightcoral;
-      height: 390px;
-      width: auto;
-      .last_news_icon {
-        .icon(0,0, 'pic/Last_news.png');
+      .doing_chapter {
+        .chapter;
+      }
+      .spirit_chapter {
+        .chapter;
       }
     }
-    .text_last_news {
-      .head_text(0; 35px);
+    .last_news {
+      position: relative;
+      //background-color: lightcoral;
+      height: 390px;
+      width: auto;
+      .text_last_news {
+        .head_text(100; 35px);
+      }
+      .last_news_icon {
+        .icon(100,0, 'pic/Last_news.png');
+      }
+      .link_all_news {
+        .link_next(15px, 100px, 5px);
+      }
+      .all_news {
+        .news1 {.news}
+        .news2 {.news}
+        .news3 {.news}
+        .news4 {.news}
+        .news5 {.news}
+      }
     }
     .answer_on_qwestion {
       position: absolute;
@@ -336,6 +420,21 @@ body {
         .icon(28px, 20px, 'pic/answer_on_quesrion.png');}
       .text_ask {
         .head_text(25px; 55px);
+      }
+      .link_all_question {
+        /*position: absolute;
+        top: 35px;
+        right: 5px;
+        width: 130px;
+        height: 20px;
+        font-weight: bold;
+        font-size: 12px;
+        a {color: #16557C;
+          &:hover {
+            color: orange;
+          }
+        }*/
+        .link_next(35px, 130px, 5px)
       }
       .ask_question_button {
         position: absolute;
