@@ -250,6 +250,17 @@ body {
     }*/
     .link_next(15px, 100px, 15px)
   }
+  .date_seminars {
+    position: absolute;
+    top: 55px;
+    left: 30px;
+    width: 400px;
+    height: 120px;
+    color: #484848;
+    p {
+      line-height: 40%;
+    }
+  }
   .new_on_site {
     position: absolute;
     top: 195px;
@@ -455,6 +466,24 @@ body {
     }
   }
 }
+.links {
+  position: relative;
+  display: inline-block;
+  top: 45px;
+  margin-left: 10px;
+  height: 100px;
+  width: 165px;
+  background-color: lightgreen;
+}
+.links_big {
+  position: relative;
+  display: inline-block;
+  top: 45px;
+  margin-left: 10px;
+  height: 160px;
+  width: 200px;
+  background-color: lightgreen;
+}
 .bottom_links_area {
   .schedule_area;
   height: 255px;
@@ -462,6 +491,18 @@ body {
   .main {
     background-color: darkolivegreen;
     height: 255px;
+    .all_links {
+      .link1 {.links}
+      .link2 {.links}
+      .link3 {.links}
+    }
+    .big_links {
+      position: absolute;
+      top: 0 ;
+      left: 530px;
+      .link4 {.links_big}
+      .link5 {.links_big}
+    }
   }
 }
 .footer {
