@@ -3,6 +3,7 @@
 @radius: 5px;
 @width_area:240px;
 @icon: 30px;
+@autor_link: 25px;
 .shadow(){
   box-shadow: 0 0 3px gray;}
 
@@ -182,6 +183,19 @@ body {
   width: 48px;
   .image('pic/Left_arrow.png','pic/Left_arrow_over.png');
 }
+.link_autor(@top:50px) {
+  position: absolute;
+  top:@top;
+  height: 20px;
+  padding-left: 15px;
+  padding-top: 2px;
+  width: 100% - 6.5px;
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+  color: #285E82;
+  //background-color: lightgoldenrodyellow;
+  font-size: 13px;
+}
 .left_block {
   top: @top_area;
   width: @width_area;
@@ -201,6 +215,19 @@ body {
     .text_autor {
       .head_text(12px; 50px;)
     };
+    .menu_link_autor {
+      .link_autor1 {.link_autor()}
+      .link_autor2 {.link_autor(50px + @autor_link)}
+      .link_autor3 {.link_autor(50px + @autor_link*2)}
+      .link_autor4 {.link_autor(50px + @autor_link*3)}
+      .link_autor5 {.link_autor(50px + @autor_link*4)}
+      .link_autor6 {.link_autor(50px + @autor_link*5)}
+      .link_autor7 {.link_autor(50px + @autor_link*6)}
+      .link_autor8 {.link_autor(50px + @autor_link*7)}
+      .link_autor9 {.link_autor(50px + @autor_link*8)}
+      .link_autor0 {.link_autor(50px + @autor_link*9)}
+
+    }
     .support_button {
       position: absolute;
       bottom: 15px;
@@ -236,18 +263,6 @@ body {
     .head_text(10px; 55px;)
   }
   .text_next {
-    /*position: absolute;
-    top: 15px;
-    right: 20px;
-    width: 100px;
-    height: 20px;
-    font-weight: bold;
-    font-size: 12px;
-    a {color: #16557C;
-      &:hover {
-      color: orange;
-      }
-    }*/
     .link_next(15px, 100px, 15px)
   }
   .date_seminars {
@@ -399,7 +414,6 @@ body {
     }
     .last_news {
       position: relative;
-      //background-color: lightcoral;
       height: 390px;
       width: auto;
       .text_last_news {
@@ -433,18 +447,6 @@ body {
         .head_text(25px; 55px);
       }
       .link_all_question {
-        /*position: absolute;
-        top: 35px;
-        right: 5px;
-        width: 130px;
-        height: 20px;
-        font-weight: bold;
-        font-size: 12px;
-        a {color: #16557C;
-          &:hover {
-            color: orange;
-          }
-        }*/
         .link_next(35px, 130px, 5px)
       }
       .ask_question_button {
@@ -489,7 +491,7 @@ body {
   height: 255px;
   background-color: #26344B;
   .main {
-    background-color: darkolivegreen;
+    //background-color: darkolivegreen;
     height: 255px;
     .all_links {
       .link1 {.links}
