@@ -1,5 +1,8 @@
 extends tamplate/head
 
+mixin la_autor(pic)
+    img(src="pic/arrow_autor.png")
+    n= pic
 block content
     .main
         include Tamplate/menu
@@ -21,16 +24,26 @@ block content
                 div.icon_autor
                 div.text_autor АВТОР
                 div.menu_link_autor
-                    .link_autor1 Рузов О.В. (об авторе)
-                    .link_autor2 Личные встречи
-                    .link_autor3 Расписание поездок
-                    .link_autor4 Консультации
-                    .link_autor5 Подписаться на рассылки
-                    .link_autor6 Задать вопрос
-                    .link_autor7 Слушать Радио Гималаи
-                    .link_autor8 Фото / Видео
-                    .link_autor9 Филиалы
-                    .link_autor0 Контакты
+                    .link_autor1
+                        +la_autor(' Рузов О.В. (об авторе)')
+                    .link_autor2
+                        +la_autor(' Личные встречи')
+                    .link_autor3
+                        +la_autor(' Расписание поездок')
+                    .link_autor4
+                        +la_autor(' Консультации')
+                    .link_autor5
+                        +la_autor(' Подписаться на рассылки')
+                    .link_autor6
+                        +la_autor(' Задать вопрос')
+                    .link_autor7
+                        +la_autor(' Слушать Радио Гималаи')
+                    .link_autor8
+                        +la_autor(' Фото / Видео')
+                    .link_autor9
+                        +la_autor(' Филиалы')
+                    .link_autor0
+                        +la_autor(' Контакты')
 
                 div.support_button
             div.shop_area
@@ -121,5 +134,4 @@ block content
                 .link5
 
     include tamplate/footer
-
 
