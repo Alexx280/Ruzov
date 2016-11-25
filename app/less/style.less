@@ -1,0 +1,548 @@
+@height_area: 625px;
+@top_area: 25px;
+@radius: 5px;
+@width_area:240px;
+@icon: 30px;
+@autor_link: 25px;
+.shadow(){
+  box-shadow: 0 0 3px gray;}
+
+.icon(@top, @left, @src){
+  position: absolute;
+  top: @top;
+  left:@left;
+  height: 30px;
+  width: 30px;
+  background: url(@src);
+  background-repeat: space;
+}
+.head_text(@top, @left) {
+  position: absolute;
+  top:@top;
+  left:@left;
+  width: 400px;
+  height: 50px;
+  font-family: 'Cuprum', serif;
+  font-size: 25px;
+}
+.link_next(@top, @wid, @rig) {
+  position: absolute;
+  top: @top;
+  right: @rig;
+  width: @wid;
+  height: 20px;
+  font-weight: bold;
+  font-size: 12px;
+  a {color: #16557C;
+    &:hover {
+      color: orange;
+    }
+  }
+}
+.chapter {
+  position: relative;
+  display: inline-block;
+  background-color: lightgreen;
+  width: 332px;
+  height: 200px;
+  margin-left: 15px;
+  top: 25px;
+}
+.news {
+  position: relative;
+  display: inline-block;
+  top: 45px;
+  margin-left: 10px;
+  height: 275px;
+  width: 175px;
+  background-color: lightgreen;
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  src: local('Cuprum'), local('Cuprum-Regular'), url('http://64424.selcdn.ru/webfonts/cuprum/400.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/cuprum/400.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cuprum';
+  src: local('Cuprum Italic'), local('Cuprum-Italic'), url('http://64424.selcdn.ru/webfonts/cuprum/400i.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/cuprum/400i.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Cuprum';
+  src: local('Cuprum Bold'), local('Cuprum-Bold'), url('http://64424.selcdn.ru/webfonts/cuprum/700.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/cuprum/700.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cuprum';
+  src: local('Cuprum Bold Italic'), local('Cuprum-BoldItalic'), url('http://64424.selcdn.ru/webfonts/cuprum/700i.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/cuprum/700i.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  background-color: #eaecee;
+  margin:0;
+}
+.main, .schedule_area {
+  position: relative;
+  width: 960px;
+  height: 1130px;
+  margin: 0 auto;
+}
+.logo{
+  height: 75px;
+  width: auto;
+  margin-top: 10px;
+}
+.menu {
+  width:  695px;
+  height: 45px;
+  background-color: white;
+  border-radius: @radius;
+  float: right;
+  margin-top: 25px;
+  box-shadow: 1px 1px 4px gray;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 7px;
+  padding-left: 25px;
+  div {
+    width: auto;
+    height: auto;
+    display: inline;
+    div {margin-right: 10px}
+  }
+  .find {
+    width: 155px;
+    height: 26px;
+    background-color: #eaecee;
+    border: 1px solid gray;
+    border-radius: @radius;
+  }
+  .find_button {
+    position: absolute;
+    margin-top: -1px;
+    right: 7px;
+    float: right;
+    height: 28px;
+  }
+}
+.head {
+  background-color: white;
+  position: relative;
+  top: 10px;
+  height: 340px;
+  width: 960px;
+  border-radius: @radius;
+  .shadow;
+  .monitor {
+    width: 938px;
+    height: 320px;
+    border: 1px solid black;
+    position: relative;
+    top: 10px;
+    margin: 10px;
+    overflow: hidden;
+    ul {
+      margin-top: -2px;
+      margin-left: -40px;
+      width: 9400px;
+      height: 320px;
+      li {
+        float: left
+      }
+    }
+  }
+  .arrow {
+    position: absolute;
+    top: 150px;
+    height: 50px;
+    width: 50px;
+  }
+}
+.image(@a, @b){
+  background-image: url(@a);
+  &:hover {background-image: url(@b)}
+}
+#next {
+  left: 880px;
+  height: 48px;
+  width: 48px;
+  .image('pic/Right_arrow.png','pic/Right_arrow_over.png');
+}
+#previous {
+  left: 125px;
+  height: 48px;
+  width: 48px;
+  .image('pic/Left_arrow.png','pic/Left_arrow_over.png');
+}
+.link_autor(@top:50px) {
+  position: absolute;
+  display:block;
+  top:@top;
+  height: 20px;
+  padding-left: 15px;
+  padding-top: 4px;
+  width: 100% - 6px;
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+  color: #285E82;
+  font-size: 13px;
+  cursor: pointer;
+  &:hover {
+    background-color: orange;
+    color: #ffffff;
+  }
+}
+.left_block {
+  top: @top_area;
+  width: @width_area;
+  height: @height_area;
+  display: inline-block;
+  position: relative;
+  .autor_area {
+    background-color: white;
+    position: relative;
+    height: 380px;
+    width: @width_area;
+    border-radius: @radius;
+    .shadow;
+    .icon_autor {
+      .icon (15px; 15px; 'pic/Autor.png');
+    };
+    .text_autor {
+      .head_text(12px; 50px;)
+    };
+    .menu_link_autor {
+      .link_autor1 {.link_autor()}
+      .link_autor2 {.link_autor(50px + @autor_link)}
+      .link_autor3 {.link_autor(50px + @autor_link*2)}
+      .link_autor4 {.link_autor(50px + @autor_link*3)}
+      .link_autor5 {.link_autor(50px + @autor_link*4)}
+      .link_autor6 {.link_autor(50px + @autor_link*5)}
+      .link_autor7 {.link_autor(50px + @autor_link*6)}
+      .link_autor8 {.link_autor(50px + @autor_link*7)}
+      .link_autor9 {.link_autor(50px + @autor_link*8)}
+      .link_autor0 {.link_autor(50px + @autor_link*9)}
+
+    }
+    .support_button {
+      position: absolute;
+      bottom: 15px;
+      left:15px;
+      height: 56px;
+      width: 211px;
+      .image('pic/Support_project_button.png','pic/Support_project_button_over.png');
+    }
+  }
+  .shop_area {
+    position: relative;
+    top: 25px;
+    float: right;
+    height: 234px;
+    width: @width_area;
+    border-radius: @radius;
+    .shadow;
+    background-image: url('pic/dobro_shop.png');
+  }
+}
+.center_block {
+  position: inherit;
+  display: inline-block;
+  top: @top_area;
+  height: @height_area;
+  width: @width_area*2;
+  margin-left: -4px;
+  margin-right: -4px;
+  .icon_seminar {
+    .icon (10px; 25px; 'pic/Seminar.png');
+  }
+  .text_seminar {
+    .head_text(10px; 55px;)
+  }
+  .text_next {
+    .link_next(15px, 100px, 15px)
+  }
+  .date_seminars {
+    position: absolute;
+    top: 55px;
+    left: 30px;
+    width: 400px;
+    height: 120px;
+    color: #484848;
+    p {
+      line-height: 40%;
+    }
+  }
+  .new_on_site {
+    position: absolute;
+    top: 195px;
+    left: 20px;
+    width: 440px;
+    border-top: 2px solid lightgray;
+    .new_icon {
+      .icon(35px, 0, 'pic/new.png')
+    }
+  }
+  .text_new {
+    .head_text(230px; 55px;)
+  }
+
+}
+.right_block {
+  top: @top_area;
+  width: @width_area;
+  height: @height_area;
+  display: inline-block;
+  position: relative;
+  .video_area {
+    background-color: #233048;
+    position: inherit;
+    display: inline-block;
+    float: right;
+    height: 220px;
+    width: @width_area - 20px;
+    border-radius: @radius;
+    .shadow;
+    padding: 10px;
+  }
+  .chanal_area {
+    background-image: url('pic/our_channal.png');
+    position: inherit;
+    top: 15px;
+    display: inline-block;
+    float: right;
+    height: 400px;
+    width: @width_area;
+  }
+}
+.schedule_area {
+  background-color: #768C9F;
+  width: 100%;
+  height: 450px;
+  .main {
+    height: 450px;
+    .text_schedule {
+      .head_text(15px; 10px;);
+      color: white;
+    }
+    .link_contact {
+      position: absolute;
+      top: 20px;
+      left: 450px;
+      width: 250px;
+      height: 20px;
+      font-weight: bold;
+      font-size: 13px;
+      a {color: #ffffff;
+      }
+    }
+    .shop_buy {
+      position: absolute;
+      right: 0;
+      width: 250px;
+      height: 300px;
+      .head_shop_buy {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        width: 227px;
+        height: 35px;
+        background-image: url('pic/shop_small.png');
+      }
+      .body_shop_buy {
+        position: absolute;
+        top: 55px;
+        right: 5px;
+        width: 240px;
+        height: 520px;
+        background-color: #ffffff;
+        z-index: 2;
+        border-radius: @radius;
+          .book_img {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            width: 210px;
+            height: 200px;
+            background-image: url("pic/book.png");
+            background-position: bottom;
+          }
+          .book_article {
+            .head_text(15px; 15px;);
+            width: 200px;
+            top: 220px;
+            font-size: 21px;
+          }
+          .book_about {
+            position: absolute;
+            top: 310px;
+            right: 15px;
+            width: 210px;
+            height: 200px;
+            font-size: 14px;
+          }
+          .buy_button {
+            position: absolute;
+            bottom: 15px;
+            left:20px;
+            height: 33px;
+            width: 200px;
+            .image('pic/Buy.png','pic/Buy_over.png');
+          }
+      }
+    }
+  }
+}
+.inform_area {
+  .main {
+    height: 1110px;
+    //background-color: antiquewhite;
+    .doing_and_spirit {
+      //background-color: cadetblue;
+      height: 270px;
+      width: auto;
+      .doing_chapter {
+        .chapter;
+      }
+      .spirit_chapter {
+        .chapter;
+      }
+    }
+    .last_news {
+      position: relative;
+      height: 390px;
+      width: auto;
+      .text_last_news {
+        .head_text(100; 35px);
+      }
+      .last_news_icon {
+        .icon(100,0, 'pic/Last_news.png');
+      }
+      .link_all_news {
+        .link_next(15px, 100px, 5px);
+      }
+      .all_news {
+        .news1 {.news}
+        .news2 {.news}
+        .news3 {.news}
+        .news4 {.news}
+        .news5 {.news}
+      }
+    }
+    .answer_on_qwestion {
+      position: absolute;
+      background-color: #ffffff;
+      border-radius: @radius;
+      bottom: 55px;
+      height: 390px;
+      width: 700px;
+      .shadow();
+      .ask_icon {
+        .icon(28px, 20px, 'pic/answer_on_quesrion.png');}
+      .text_ask {
+        .head_text(25px; 55px);
+      }
+      .link_all_question {
+        .link_next(35px, 130px, 5px)
+      }
+      .ask_question_button {
+        position: absolute;
+        bottom: 18px;
+        right: 18px;
+        height: 43px;
+        width: 211px;
+        .image('pic/ask_question.png','pic/ask_question_over.png');
+        background-repeat: no-repeat;
+      }
+    }
+    .vidjet_vk {
+      position: absolute;
+      margin-top: 15px;
+      right: 0;
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+.links {
+  position: relative;
+  display: inline-block;
+  top: 45px;
+  margin-left: 10px;
+  height: 100px;
+  width: 165px;
+  background-color: lightgreen;
+}
+.links_big {
+  position: relative;
+  display: inline-block;
+  top: 45px;
+  margin-left: 10px;
+  height: 160px;
+  width: 200px;
+  background-color: lightgreen;
+}
+.bottom_links_area {
+  .schedule_area;
+  height: 255px;
+  background-color: #26344B;
+  .main {
+    //background-color: darkolivegreen;
+    height: 255px;
+    .all_links {
+      .link1 {.links}
+      .link2 {.links}
+      .link3 {.links}
+    }
+    .big_links {
+      position: absolute;
+      top: 0 ;
+      left: 530px;
+      .link4 {.links_big}
+      .link5 {.links_big}
+    }
+  }
+}
+.footer {
+  position: relative;
+  width: 960px;
+  height: 125px;
+  margin: 0 auto;
+  img {
+    position: relative;
+    top: 15px;
+  }
+  .support_button {
+    position: absolute;
+    top: 35px;
+    left:290px;
+    height: 48px;
+    width: 221px;
+    .image('pic/Support_project_small.png','pic/Support_project_small_over.png');
+  }
+  .consult_button {
+    position: absolute;
+    top: 35px;
+    left: 538px;
+    height: 48px;
+    width: 221px;
+    .image('pic/Consult.png','pic/Consult_over.png');
+    background-repeat: no-repeat;
+  }
+  .rights {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 150px;
+    height: 65px;
+  }
+}
+.good {
+  background-color: #16557C;
+}
