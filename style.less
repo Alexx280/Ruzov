@@ -291,10 +291,45 @@ body {
     .new_icon {
       .icon(35px, 0, 'pic/new.png')
     }
+    .text_new {
+      .head_text(35px; 35px;)
+    }
+    .article1 {
+      border: 1px solid black;
+      position: absolute;
+      height: 110px;
+      width: 410px;
+      left: 0;
+      top:75px;
+      .image_art {
+        width: 160px;
+        height: 110px;
+        background-color: #004444;
+        border-radius: @radius;
+        display: inline-block;
+      };
+      .text_art {
+        display: inline-block;
+        background-color: #000088;
+        width: 230px;
+        height: 110px;
+        margin-left: 20px;
+        color: white;
+        line-height: 1em;
+        top: 0;
+        margin-bottom: 0;
+        vertical-align:top;
+        p, .n{
+          line-height: 1em;
+          font-size: 0.8em;
+          margin-top: 0;
+          margin-bottom: 0;
+        };
+
+      }
+    }
   }
-  .text_new {
-    .head_text(230px; 55px;)
-  }
+
 
 }
 .right_block {
