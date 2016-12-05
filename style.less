@@ -276,15 +276,16 @@ body {
     top: 55px;
     left: 30px;
     width: 400px;
-    height: 120px;
+    height: 110px;
     color: #484848;
+    font-size: 0.8em;
     p {
       line-height: 40%;
     }
   }
   .new_on_site {
     position: absolute;
-    top: 195px;
+    top: 175px;
     left: 20px;
     width: 440px;
     border-top: 2px solid lightgray;
@@ -294,27 +295,69 @@ body {
     .text_new {
       .head_text(35px; 35px;)
     }
-    .article1 {
-      border: 1px solid black;
+    .article(@top_art, @img_art) {
       position: absolute;
       height: 110px;
       width: 410px;
       left: 0;
-      top:75px;
+      top: @top_art;
+      &:hover {
+        .text_art .hight_text{color: orange;};
+        .image_art_shadow {opacity: 0;}
+        .image_art_shadow_bottom {opacity: 0.5;}
+      }
       .image_art {
         width: 160px;
         height: 110px;
-        background-color: #004444;
+        background-image: url(@img_art);
         border-radius: @radius;
         display: inline-block;
+          .tic_tac {
+            background-image: url("pic/tic_tac.png");
+            position: absolute;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            left: 6px;
+            bottom: 5px;
+            z-index: 10;
+          }
+          .date{
+            color: white;
+            position: absolute;
+            display: inline-block;
+            left: 20px;
+            bottom: 3px;
+            font-size: 0.8em;
+            z-index: 10;
+          }
+      };
+      .image_art_shadow {
+        position: absolute;
+        top:0;
+        left:0;
+        width: 160px;
+        height: 110px;
+        background-color: gray;
+        border-radius: @radius;
+        opacity: 0.5;
+      };
+      .image_art_shadow_bottom {
+        position: absolute;
+        bottom:0;
+        left:0;
+        width: 160px;
+        height: 20px;
+        background-color: gray;
+        border-bottom-right-radius: @radius;
+        border-bottom-left-radius: @radius;
+        opacity: 0;
       };
       .text_art {
         display: inline-block;
-        background-color: #000088;
         width: 230px;
         height: 110px;
         margin-left: 20px;
-        color: white;
         line-height: 1em;
         top: 0;
         margin-bottom: 0;
@@ -325,11 +368,20 @@ body {
           margin-top: 0;
           margin-bottom: 0;
         };
-
+        .top_article_text {
+          color: darkgray;
+          margin-bottom: 5px;
+        }
+        .hight_text {
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
       }
     }
+    .article1 {.article(35px, 'pic/newonsite_article_img1.png')}
+    .article2 {.article(175px, 'pic/newonsite_article_img2.png')}
+    .article3 {.article(315px, 'pic/newonsite_article_img3.png')}
   }
-
 
 }
 .right_block {

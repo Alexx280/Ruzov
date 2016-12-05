@@ -3,6 +3,18 @@ extends tamplate/head
 mixin la_autor(pic)
     img(src="pic/arrow_autor.png")
     n= pic
+mixin new_on_site_article(date_art)
+    div.article1
+        .image_art
+            .tic_tac
+            .date= date_art
+        .image_art_shadow
+        .image_art_shadow_bottom
+        .text_art
+            p(class='top_article_text') Дузовный раздел
+                n(class = 'n')  > Шримад Бхагаватам
+            p(class = 'hight_text') ШРИМАД БХАГАВАТАМ 6.1 ТЕКСТ 7
+            P Шукодева Госвами отвечал wer sdghg tehbtgth bdfhgtfdgdfgth gg ig fuui ughsfuighgu sfug ugh fuguigpsfu gsfpuhgbj
 block content
     .main
         include Tamplate/menu
@@ -73,13 +85,12 @@ block content
                 .new_icon
                 .text_new НОВОЕ НА САЙТЕ
                 .center_articles
-                .article1
-                    .image_art
-                    .text_art
-                        p Дузовный раздел
-                            n(class = 'n')  Шримад Бхагаватам
-                        p ШРИМАД БХАГАВАТАМ 6.1 ТЕКСТ 7
-                        P Шукодева Госвами отвечал wer sdghg tehbtgth bdfhgtfdgdfgth gg ig fuui ughsfuighgu sfug ugh fuguigpsfu gsfpuhgbj
+                div.article1
+                    +new_on_site_article('01.01.2016')
+                div.article2
+                    +new_on_site_article('15.01.2016')
+                div.article3
+                    +new_on_site_article('29.02.2016')
             //video(width="230" height="13" controls="controls")
                 source(src="https://www.youtube.com/embed/9CGt8VJI510")
         .right_block
