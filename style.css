@@ -1,3 +1,51 @@
+.chapter {
+    position: relative;
+    display: inline-block;
+    background-color: #90ee90;
+    width: 332px;
+    height: 200px;
+    margin-left: 15px;
+    top: 25px
+}
+
+.news {
+    position: relative;
+    display: inline-block;
+    top: 45px;
+    margin-left: 10px;
+    height: 275px;
+    width: 175px;
+    background-color: #90ee90
+}
+
+@font-face {
+    font-family: Cuprum;
+    src: local('Cuprum'), local('Cuprum-Regular'), url(http://64424.selcdn.ru/webfonts/cuprum/400.woff2) format('woff2'), url(http://64424.selcdn.ru/webfonts/cuprum/400.woff) format('woff');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Cuprum;
+    src: local('Cuprum Italic'), local('Cuprum-Italic'), url(http://64424.selcdn.ru/webfonts/cuprum/400i.woff2) format('woff2'), url(http://64424.selcdn.ru/webfonts/cuprum/400i.woff) format('woff');
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: Cuprum;
+    src: local('Cuprum Bold'), local('Cuprum-Bold'), url(http://64424.selcdn.ru/webfonts/cuprum/700.woff2) format('woff2'), url(http://64424.selcdn.ru/webfonts/cuprum/700.woff) format('woff');
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Cuprum;
+    src: local('Cuprum Bold Italic'), local('Cuprum-BoldItalic'), url(http://64424.selcdn.ru/webfonts/cuprum/700i.woff2) format('woff2'), url(http://64424.selcdn.ru/webfonts/cuprum/700i.woff) format('woff');
+    font-weight: 700;
+    font-style: italic
+}
+
 body {
     background-color: #eaecee;
     margin: 0
@@ -51,6 +99,7 @@ body {
 
 .menu .find_button {
     position: absolute;
+    margin-top: -1px;
     right: 7px;
     float: right;
     height: 28px
@@ -142,6 +191,216 @@ body {
     background: url(pic/Autor.png) space
 }
 
+.left_block .autor_area .text_autor {
+    position: absolute;
+    top: 12px;
+    left: 50px;
+    width: 400px;
+    height: 50px;
+    font-family: Cuprum, serif;
+    font-size: 25px
+}
+
+.left_block .autor_area .menu_link_autor .link_autor1 {
+    position: absolute;
+    display: block;
+    top: 50px;
+    height: 20px;
+    padding-left: 15px;
+    padding-top: 4px;
+    width: 94%;
+    font-weight: 700;
+    border-bottom: 1px solid gray;
+    color: #285E82;
+    font-size: 13px;
+    cursor: pointer
+}
+
+.left_block .autor_area .menu_link_autor .link_autor1:hover {
+    background-color: orange;
+    color: #fff
+}
+
+.left_block .autor_area .menu_link_autor .link_autor2 {
+    position: absolute;
+    display: block;
+    top: 75px;
+    height: 20px;
+    padding-left: 15px;
+    padding-top: 4px;
+    width: 94%;
+    font-weight: 700;
+    border-bottom: 1px solid gray;
+    color: #285E82;
+    font-size: 13px;
+    cursor: pointer
+}
+
+.left_block .autor_area .menu_link_autor .link_autor2:hover {
+    background-color: orange;
+    color: #fff
+}
+
+.left_block .autor_area .menu_link_autor .link_autor3 {
+    position: absolute;
+    display: block;
+    top: 100px;
+    height: 20px;
+    padding-left: 15px;
+    padding-top: 4px;
+    width: 94%;
+    font-weight: 700;
+    border-bottom: 1px solid gray;
+    color: #285E82;
+    font-size: 13px;
+    cursor: pointer
+}
+
+.left_block .autor_area .menu_link_autor .link_autor3:hover {
+    background-color: orange;
+    color: #fff
+}
+
+.left_block .autor_area .menu_link_autor .link_autor4 {
+    position: absolute;
+    display: block;
+    top: 125px;
+    height: 20px;
+    padding-left: 15px;
+    padding-top: 4px;
+    width: 94%;
+    font-weight: 700;
+    border-bottom: 1px solid gray;
+    color: #285E82;
+    font-size: 13px;
+    cursor: pointer
+}
+
+.left_block .autor_area .menu_link_autor .link_autor4:hover {
+    background-color: orange;
+    color: #fff
+}
+
+.left_block .autor_area .menu_link_autor .link_autor5 {
+    position: absolute;
+    display: block;
+    top: 150px;
+    height: 20px;
+    padding-left: 15px;
+    padding-top: 4px;
+    width: 94%;
+    font-weight: 700;
+    border-bottom: 1px solid gray;
+    color: #285E82;
+    font-size: 13px;
+    cursor: pointer
+}
+
+.left_block .autor_area .menu_link_autor .link_autor5:hover {
+    background-color: orange;
+    color: #fff
+}
+
+.left_block .autor_area .menu_link_autor .link_autor6 {
+    position: absolute;
+    display: block;
+    top: 175px;
+    height: 20px;
+    padding-left: 15px;
+    padding-top: 4px;
+    width: 94%;
+    font-weight: 700;
+    border-bottom: 1px solid gray;
+    color: #285E82;
+    font-size: 13px;
+    cursor: pointer
+}
+
+.left_block .autor_area .menu_link_autor .link_autor6:hover {
+    background-color: orange;
+    color: #fff
+}
+
+.left_block .autor_area .menu_link_autor .link_autor7 {
+    position: absolute;
+    display: block;
+    top: 200px;
+    height: 20px;
+    padding-left: 15px;
+    padding-top: 4px;
+    width: 94%;
+    font-weight: 700;
+    border-bottom: 1px solid gray;
+    color: #285E82;
+    font-size: 13px;
+    cursor: pointer
+}
+
+.left_block .autor_area .menu_link_autor .link_autor7:hover {
+    background-color: orange;
+    color: #fff
+}
+
+.left_block .autor_area .menu_link_autor .link_autor8 {
+    position: absolute;
+    display: block;
+    top: 225px;
+    height: 20px;
+    padding-left: 15px;
+    padding-top: 4px;
+    width: 94%;
+    font-weight: 700;
+    border-bottom: 1px solid gray;
+    color: #285E82;
+    font-size: 13px;
+    cursor: pointer
+}
+
+.left_block .autor_area .menu_link_autor .link_autor8:hover {
+    background-color: orange;
+    color: #fff
+}
+
+.left_block .autor_area .menu_link_autor .link_autor9 {
+    position: absolute;
+    display: block;
+    top: 250px;
+    height: 20px;
+    padding-left: 15px;
+    padding-top: 4px;
+    width: 94%;
+    font-weight: 700;
+    border-bottom: 1px solid gray;
+    color: #285E82;
+    font-size: 13px;
+    cursor: pointer
+}
+
+.left_block .autor_area .menu_link_autor .link_autor9:hover {
+    background-color: orange;
+    color: #fff
+}
+
+.left_block .autor_area .menu_link_autor .link_autor0 {
+    position: absolute;
+    display: block;
+    top: 275px;
+    height: 20px;
+    padding-left: 15px;
+    padding-top: 4px;
+    width: 94%;
+    font-weight: 700;
+    border-bottom: 1px solid gray;
+    color: #285E82;
+    font-size: 13px;
+    cursor: pointer
+}
+
+.left_block .autor_area .menu_link_autor .link_autor0:hover {
+    background-color: orange;
+    color: #fff
+}
+
 .left_block .autor_area .support_button {
     position: absolute;
     bottom: 15px;
@@ -185,9 +444,51 @@ body {
     background: url(pic/Seminar.png) space
 }
 
+.center_block .text_seminar {
+    position: absolute;
+    top: 10px;
+    left: 55px;
+    width: 400px;
+    height: 50px;
+    font-family: Cuprum, serif;
+    font-size: 25px
+}
+
+.center_block .text_next {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 100px;
+    height: 20px;
+    font-weight: 700;
+    font-size: 12px
+}
+
+.center_block .text_next a {
+    color: #16557C
+}
+
+.center_block .text_next a:hover {
+    color: orange
+}
+
+.center_block .date_seminars {
+    position: absolute;
+    top: 55px;
+    left: 30px;
+    width: 400px;
+    height: 110px;
+    color: #484848;
+    font-size: .8em
+}
+
+.center_block .date_seminars p {
+    line-height: 40%
+}
+
 .center_block .new_on_site {
     position: absolute;
-    top: 195px;
+    top: 175px;
     left: 20px;
     width: 440px;
     border-top: 2px solid #d3d3d3
@@ -200,6 +501,352 @@ body {
     height: 30px;
     width: 30px;
     background: url(pic/new.png) space
+}
+
+.center_block .new_on_site .text_new {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    width: 400px;
+    height: 50px;
+    font-family: Cuprum, serif;
+    font-size: 25px
+}
+
+.center_block .new_on_site .article1 {
+    position: absolute;
+    height: 110px;
+    width: 410px;
+    left: 0;
+    top: 35px
+}
+
+.center_block .new_on_site .article1:hover .text_art .hight_text {
+    color: orange
+}
+
+.center_block .new_on_site .article1:hover .image_art_shadow {
+    opacity: 0
+}
+
+.center_block .new_on_site .article1:hover .image_art_shadow_bottom {
+    opacity: .5
+}
+
+.center_block .new_on_site .article1 .image_art {
+    width: 160px;
+    height: 110px;
+    background-image: url(pic/newonsite_article_img1.png);
+    border-radius: 5px;
+    display: inline-block
+}
+
+.center_block .new_on_site .article1 .image_art .tic_tac {
+    background-image: url(pic/tic_tac.png);
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    left: 6px;
+    bottom: 5px;
+    z-index: 10
+}
+
+.center_block .new_on_site .article1 .image_art .date {
+    color: #fff;
+    position: absolute;
+    display: inline-block;
+    left: 20px;
+    bottom: 3px;
+    font-size: .8em;
+    z-index: 10
+}
+
+.center_block .new_on_site .article1 .image_art_shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 110px;
+    background-color: gray;
+    border-radius: 5px;
+    opacity: .5
+}
+
+.center_block .new_on_site .article1 .image_art_shadow_bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 160px;
+    height: 20px;
+    background-color: gray;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    opacity: 0
+}
+
+.center_block .new_on_site .article1 .img_pointer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 110px;
+    border-radius: 5px;
+    z-index: 12;
+    cursor: pointer
+}
+
+.center_block .new_on_site .article1 .text_art {
+    display: inline-block;
+    width: 230px;
+    height: 110px;
+    margin-left: 20px;
+    line-height: 1em;
+    top: 0;
+    margin-bottom: 0;
+    vertical-align: top
+}
+
+.center_block .new_on_site .article1 .text_art .n, .center_block .new_on_site .article1 .text_art p {
+    line-height: 1em;
+    font-size: .8em;
+    margin-top: 0;
+    margin-bottom: 0;
+    cursor: pointer
+}
+
+.center_block .new_on_site .article1 .text_art .top_article_text {
+    color: #a9a9a9;
+    margin-bottom: 5px
+}
+
+.center_block .new_on_site .article1 .text_art .hight_text {
+    margin-bottom: 10px;
+    font-weight: 700
+}
+
+.center_block .new_on_site .article2 {
+    position: absolute;
+    height: 110px;
+    width: 410px;
+    left: 0;
+    top: 175px
+}
+
+.center_block .new_on_site .article2:hover .text_art .hight_text {
+    color: orange
+}
+
+.center_block .new_on_site .article2:hover .image_art_shadow {
+    opacity: 0
+}
+
+.center_block .new_on_site .article2:hover .image_art_shadow_bottom {
+    opacity: .5
+}
+
+.center_block .new_on_site .article2 .image_art {
+    width: 160px;
+    height: 110px;
+    background-image: url(pic/newonsite_article_img2.png);
+    border-radius: 5px;
+    display: inline-block
+}
+
+.center_block .new_on_site .article2 .image_art .tic_tac {
+    background-image: url(pic/tic_tac.png);
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    left: 6px;
+    bottom: 5px;
+    z-index: 10
+}
+
+.center_block .new_on_site .article2 .image_art .date {
+    color: #fff;
+    position: absolute;
+    display: inline-block;
+    left: 20px;
+    bottom: 3px;
+    font-size: .8em;
+    z-index: 10
+}
+
+.center_block .new_on_site .article2 .image_art_shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 110px;
+    background-color: gray;
+    border-radius: 5px;
+    opacity: .5
+}
+
+.center_block .new_on_site .article2 .image_art_shadow_bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 160px;
+    height: 20px;
+    background-color: gray;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    opacity: 0
+}
+
+.center_block .new_on_site .article2 .img_pointer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 110px;
+    border-radius: 5px;
+    z-index: 12;
+    cursor: pointer
+}
+
+.center_block .new_on_site .article2 .text_art {
+    display: inline-block;
+    width: 230px;
+    height: 110px;
+    margin-left: 20px;
+    line-height: 1em;
+    top: 0;
+    margin-bottom: 0;
+    vertical-align: top
+}
+
+.center_block .new_on_site .article2 .text_art .n, .center_block .new_on_site .article2 .text_art p {
+    line-height: 1em;
+    font-size: .8em;
+    margin-top: 0;
+    margin-bottom: 0;
+    cursor: pointer
+}
+
+.center_block .new_on_site .article2 .text_art .top_article_text {
+    color: #a9a9a9;
+    margin-bottom: 5px
+}
+
+.center_block .new_on_site .article2 .text_art .hight_text {
+    margin-bottom: 10px;
+    font-weight: 700
+}
+
+.center_block .new_on_site .article3 {
+    position: absolute;
+    height: 110px;
+    width: 410px;
+    left: 0;
+    top: 315px
+}
+
+.center_block .new_on_site .article3:hover .text_art .hight_text {
+    color: orange
+}
+
+.center_block .new_on_site .article3:hover .image_art_shadow {
+    opacity: 0
+}
+
+.center_block .new_on_site .article3:hover .image_art_shadow_bottom {
+    opacity: .5
+}
+
+.center_block .new_on_site .article3 .image_art {
+    width: 160px;
+    height: 110px;
+    background-image: url(pic/newonsite_article_img3.png);
+    border-radius: 5px;
+    display: inline-block
+}
+
+.center_block .new_on_site .article3 .image_art .tic_tac {
+    background-image: url(pic/tic_tac.png);
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    left: 6px;
+    bottom: 5px;
+    z-index: 10
+}
+
+.center_block .new_on_site .article3 .image_art .date {
+    color: #fff;
+    position: absolute;
+    display: inline-block;
+    left: 20px;
+    bottom: 3px;
+    font-size: .8em;
+    z-index: 10
+}
+
+.center_block .new_on_site .article3 .image_art_shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 110px;
+    background-color: gray;
+    border-radius: 5px;
+    opacity: .5
+}
+
+.center_block .new_on_site .article3 .image_art_shadow_bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 160px;
+    height: 20px;
+    background-color: gray;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    opacity: 0
+}
+
+.center_block .new_on_site .article3 .img_pointer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 110px;
+    border-radius: 5px;
+    z-index: 12;
+    cursor: pointer
+}
+
+.center_block .new_on_site .article3 .text_art {
+    display: inline-block;
+    width: 230px;
+    height: 110px;
+    margin-left: 20px;
+    line-height: 1em;
+    top: 0;
+    margin-bottom: 0;
+    vertical-align: top
+}
+
+.center_block .new_on_site .article3 .text_art .n, .center_block .new_on_site .article3 .text_art p {
+    line-height: 1em;
+    font-size: .8em;
+    margin-top: 0;
+    margin-bottom: 0;
+    cursor: pointer
+}
+
+.center_block .new_on_site .article3 .text_art .top_article_text {
+    color: #a9a9a9;
+    margin-bottom: 5px
+}
+
+.center_block .new_on_site .article3 .text_art .hight_text {
+    margin-bottom: 10px;
+    font-weight: 700
 }
 
 .right_block {
@@ -223,14 +870,13 @@ body {
 }
 
 .right_block .chanal_area {
-    background-color: #26344B;
+    background-image: url(pic/our_channal.png);
     position: inherit;
-    top: 30px;
+    top: 15px;
     display: inline-block;
     float: right;
-    height: 371px;
-    width: 236px;
-    border: 2px solid orange
+    height: 400px;
+    width: 240px
 }
 
 .schedule_area {
@@ -240,34 +886,173 @@ body {
 }
 
 .schedule_area .main {
-    height: 450px;
-    background-color: #faebd7
+    height: 450px
+}
+
+.schedule_area .main .text_schedule {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 400px;
+    height: 50px;
+    font-family: Cuprum, serif;
+    font-size: 25px;
+    color: #fff
+}
+
+.schedule_area .main .link_contact {
+    position: absolute;
+    top: 20px;
+    left: 450px;
+    width: 250px;
+    height: 20px;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.schedule_area .main .link_contact a {
+    color: #fff
+}
+
+.schedule_area .main .shop_buy {
+    position: absolute;
+    right: 0;
+    width: 250px;
+    height: 300px
+}
+
+.schedule_area .main .shop_buy .head_shop_buy {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 227px;
+    height: 35px;
+    background-image: url(pic/shop_small.png)
+}
+
+.schedule_area .main .shop_buy .body_shop_buy {
+    position: absolute;
+    top: 55px;
+    right: 5px;
+    width: 240px;
+    height: 520px;
+    background-color: #fff;
+    z-index: 2;
+    border-radius: 5px
+}
+
+.schedule_area .main .shop_buy .body_shop_buy .book_img {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 210px;
+    height: 200px;
+    background-image: url(pic/book.png);
+    background-position: bottom
+}
+
+.schedule_area .main .shop_buy .body_shop_buy .book_article {
+    position: absolute;
+    left: 15px;
+    height: 50px;
+    font-family: Cuprum, serif;
+    width: 200px;
+    top: 220px;
+    font-size: 21px
+}
+
+.schedule_area .main .shop_buy .body_shop_buy .book_about {
+    position: absolute;
+    top: 310px;
+    right: 15px;
+    width: 210px;
+    height: 200px;
+    font-size: 14px
+}
+
+.schedule_area .main .shop_buy .body_shop_buy .buy_button {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    height: 33px;
+    width: 200px;
+    background-image: url(pic/Buy.png)
+}
+
+.schedule_area .main .shop_buy .body_shop_buy .buy_button:hover {
+    background-image: url(pic/Buy_over.png)
 }
 
 .inform_area .main {
-    height: 1110px;
-    background-color: #faebd7
+    height: 1110px
 }
 
 .inform_area .main .doing_and_spirit {
-    background-color: #5f9ea0;
     height: 270px;
     width: auto
 }
 
+.inform_area .main .doing_and_spirit .doing_chapter, .inform_area .main .doing_and_spirit .spirit_chapter {
+    position: relative;
+    display: inline-block;
+    background-color: #90ee90;
+    width: 332px;
+    height: 200px;
+    margin-left: 15px;
+    top: 25px
+}
+
 .inform_area .main .last_news {
-    background-color: #f08080;
+    position: relative;
     height: 390px;
     width: auto
 }
 
+.inform_area .main .last_news .text_last_news {
+    position: absolute;
+    top: 100;
+    left: 35px;
+    width: 400px;
+    height: 50px;
+    font-family: Cuprum, serif;
+    font-size: 25px
+}
+
 .inform_area .main .last_news .last_news_icon {
     position: absolute;
-    top: 0;
+    top: 100;
     left: 0;
     height: 30px;
     width: 30px;
     background: url(pic/Last_news.png) space
+}
+
+.inform_area .main .last_news .link_all_news {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    width: 100px;
+    height: 20px;
+    font-weight: 700;
+    font-size: 12px
+}
+
+.inform_area .main .last_news .link_all_news a {
+    color: #16557C
+}
+
+.inform_area .main .last_news .link_all_news a:hover {
+    color: orange
+}
+
+.inform_area .main .last_news .all_news .news1, .inform_area .main .last_news .all_news .news2, .inform_area .main .last_news .all_news .news3, .inform_area .main .last_news .all_news .news4, .inform_area .main .last_news .all_news .news5 {
+    position: relative;
+    display: inline-block;
+    top: 45px;
+    margin-left: 10px;
+    height: 275px;
+    width: 175px;
+    background-color: #90ee90
 }
 
 .inform_area .main .answer_on_qwestion {
@@ -289,18 +1074,74 @@ body {
     background: url(pic/answer_on_quesrion.png) space
 }
 
+.inform_area .main .answer_on_qwestion .text_ask {
+    position: absolute;
+    top: 25px;
+    left: 55px;
+    width: 400px;
+    height: 50px;
+    font-family: Cuprum, serif;
+    font-size: 25px
+}
+
+.inform_area .main .answer_on_qwestion .link_all_question {
+    position: absolute;
+    top: 35px;
+    right: 5px;
+    width: 130px;
+    height: 20px;
+    font-weight: 700;
+    font-size: 12px
+}
+
+.inform_area .main .answer_on_qwestion .link_all_question a {
+    color: #16557C
+}
+
+.inform_area .main .answer_on_qwestion .link_all_question a:hover {
+    color: orange
+}
+
 .inform_area .main .answer_on_qwestion .ask_question_button {
     position: absolute;
     bottom: 18px;
     right: 18px;
     height: 43px;
-    width: 210px;
+    width: 211px;
     background-image: url(pic/ask_question.png);
     background-repeat: no-repeat
 }
 
 .inform_area .main .answer_on_qwestion .ask_question_button:hover {
     background-image: url(pic/ask_question_over.png)
+}
+
+.inform_area .main .vidjet_vk {
+    position: absolute;
+    margin-top: 15px;
+    right: 0;
+    width: 250px;
+    height: 250px
+}
+
+.links {
+    position: relative;
+    display: inline-block;
+    top: 45px;
+    margin-left: 10px;
+    height: 100px;
+    width: 165px;
+    background-color: #90ee90
+}
+
+.links_big {
+    position: relative;
+    display: inline-block;
+    top: 45px;
+    margin-left: 10px;
+    height: 160px;
+    width: 200px;
+    background-color: #90ee90
 }
 
 .bottom_links_area {
@@ -312,9 +1153,128 @@ body {
     background-color: #26344B
 }
 
+.bottom_links_area .main .text_schedule {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 400px;
+    height: 50px;
+    font-family: Cuprum, serif;
+    font-size: 25px;
+    color: #fff
+}
+
+.bottom_links_area .main .link_contact {
+    position: absolute;
+    top: 20px;
+    left: 450px;
+    width: 250px;
+    height: 20px;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.bottom_links_area .main .link_contact a {
+    color: #fff
+}
+
+.bottom_links_area .main .shop_buy {
+    position: absolute;
+    right: 0;
+    width: 250px;
+    height: 300px
+}
+
+.bottom_links_area .main .shop_buy .head_shop_buy {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 227px;
+    height: 35px;
+    background-image: url(pic/shop_small.png)
+}
+
+.bottom_links_area .main .shop_buy .body_shop_buy {
+    position: absolute;
+    top: 55px;
+    right: 5px;
+    width: 240px;
+    height: 520px;
+    background-color: #fff;
+    z-index: 2;
+    border-radius: 5px
+}
+
+.bottom_links_area .main .shop_buy .body_shop_buy .book_img {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 210px;
+    height: 200px;
+    background-image: url(pic/book.png);
+    background-position: bottom
+}
+
+.bottom_links_area .main .shop_buy .body_shop_buy .book_article {
+    position: absolute;
+    left: 15px;
+    height: 50px;
+    font-family: Cuprum, serif;
+    width: 200px;
+    top: 220px;
+    font-size: 21px
+}
+
+.bottom_links_area .main .shop_buy .body_shop_buy .book_about {
+    position: absolute;
+    top: 310px;
+    right: 15px;
+    width: 210px;
+    height: 200px;
+    font-size: 14px
+}
+
+.bottom_links_area .main .shop_buy .body_shop_buy .buy_button {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    height: 33px;
+    width: 200px;
+    background-image: url(pic/Buy.png)
+}
+
+.bottom_links_area .main .shop_buy .body_shop_buy .buy_button:hover {
+    background-image: url(pic/Buy_over.png)
+}
+
 .bottom_links_area .main {
-    background-color: #556b2f;
     height: 255px
+}
+
+.bottom_links_area .main .all_links .link1, .bottom_links_area .main .all_links .link2, .bottom_links_area .main .all_links .link3 {
+    position: relative;
+    display: inline-block;
+    top: 45px;
+    margin-left: 10px;
+    height: 100px;
+    width: 165px;
+    background-color: #90ee90
+}
+
+.bottom_links_area .main .big_links {
+    position: absolute;
+    top: 0;
+    left: 530px
+}
+
+.bottom_links_area .main .big_links .link4, .bottom_links_area .main .big_links .link5 {
+    position: relative;
+    display: inline-block;
+    top: 45px;
+    margin-left: 10px;
+    height: 160px;
+    width: 200px;
+    background-color: #90ee90
 }
 
 .footer {
