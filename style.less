@@ -312,6 +312,7 @@ body {
         background-image: url(@img_art);
         border-radius: @radius;
         display: inline-block;
+
           .tic_tac {
             background-image: url("pic/tic_tac.png");
             position: absolute;
@@ -331,6 +332,7 @@ body {
             font-size: 0.8em;
             z-index: 10;
           }
+
       };
       .image_art_shadow {
         position: absolute;
@@ -353,6 +355,16 @@ body {
         border-bottom-left-radius: @radius;
         opacity: 0;
       };
+      .img_pointer {
+        position: absolute;
+        top:0;
+        left:0;
+        width: 160px;
+        height: 110px;
+        border-radius: @radius;
+        z-index: 12;
+        cursor: pointer;
+      }
       .text_art {
         display: inline-block;
         width: 230px;
@@ -367,6 +379,7 @@ body {
           font-size: 0.8em;
           margin-top: 0;
           margin-bottom: 0;
+          cursor: pointer;
         };
         .top_article_text {
           color: darkgray;
@@ -382,7 +395,6 @@ body {
     .article2 {.article(175px, 'pic/newonsite_article_img2.png')}
     .article3 {.article(315px, 'pic/newonsite_article_img3.png')}
   }
-
 }
 .right_block {
   top: @top_area;
