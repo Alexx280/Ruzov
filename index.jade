@@ -16,6 +16,17 @@ mixin new_on_site_article(date_art)
                 n(class = 'n')  > Шримад Бхагаватам
             p(class = 'hight_text') ШРИМАД БХАГАВАТАМ 6.1 ТЕКСТ 7
             P Шукодева Госвами отвечал wer sdghg tehbtgth bdfhgtfdgdfgth gg ig fuui ughsfuighgu sfug ugh fuguigpsfu gsfpuhgbj
+mixin last_news_articles
+    .fon
+        .img_news
+        .image_art_shadow
+        .img_pointer
+    .text_art
+        p(class= 'toptext') ВАША РЕКЛАМА НА РЕСУРСАХ ГРУППЫ КОМПАНИЙ БПЛПНС
+        p(class = 'text') ЛЕТНИЕ СКИДКИ НА ЛЕТНЮЮ РЕКЛАМУ! Дорогие рекламодатели! В честь победившей зиму ввесны
+        P(class = 'link')
+            a(href="#") подробнее...
+
 block content
     .main
         include Tamplate/menu
@@ -105,7 +116,7 @@ block content
             .text_schedule РАСПИСАНИЕ ЛЕКЦИЙ КЛУБА
             .link_contact
                 a(href= "#") Контакты клуба "Баланс"
-            .shop_buy
+            div.shop_buy
                 .head_shop_buy
                 .body_shop_buy
                     .book_img
@@ -127,10 +138,15 @@ block content
                     a(href= "#") все новости (...)
                 .all_news
                     .news1
+                        +last_news_articles
                     .news2
+                        +last_news_articles
                     .news3
+                        +last_news_articles
                     .news4
+                        +last_news_articles
                     .news5
+                        +last_news_articles
             .answer_on_qwestion
                 .ask_icon
                 .text_ask ОТВЕТЫ НА ВОПРОСЫ

@@ -49,14 +49,64 @@
   margin-left: 15px;
   top: 25px;
 }
-.news {
+.news(@pic) {
   position: relative;
   display: inline-block;
-  top: 45px;
-  margin-left: 10px;
+  top:45px;
+  margin-left:10px;
   height: 275px;
-  width: 175px;
-  background-color: lightgreen;
+  width: 180px;
+  //background-color: lightgreen;
+  vertical-align:top;
+  &:hover {
+    .fon .image_art_shadow {opacity: 0;};
+    .text_art .toptext, .text_art .link a{color: orange}
+  }
+  .fon {
+    background-color: white;
+    border-radius: @radius;
+    width: 180px;
+    height: 110px;
+    .img_news {
+      position: relative;
+      top: 6px;
+      left: 6px;
+      width: 165px;
+      height: 97px;
+      background-image: url(@pic);
+    }
+    .image_art_shadow {
+      position: absolute;
+      top:6px;
+      left:6px;
+      width: 166px;
+      height: 97px;
+      background-color: gray;
+      opacity: 0.5;
+    }
+    .img_pointer {
+      position: absolute;
+      top:0;
+      left:0;
+      width: 180px;
+      height: 110px;
+      border-radius: @radius;
+      z-index: 10;
+      cursor: pointer;
+    }
+  }
+  .text_art {
+    font-size: 0.8em;
+    vertical-align:top;
+    cursor: pointer;
+    .toptext {
+      color: #16557C;
+      font-weight: bold;
+    }
+    .text {
+      font-size: 12px;
+    }
+  }
 }
 
 @font-face {
@@ -312,7 +362,6 @@ body {
         background-image: url(@img_art);
         border-radius: @radius;
         display: inline-block;
-
           .tic_tac {
             background-image: url("pic/tic_tac.png");
             position: absolute;
@@ -388,6 +437,7 @@ body {
         .hight_text {
           margin-bottom: 10px;
           font-weight: bold;
+          color: #16557C;
         }
       }
     }
@@ -531,11 +581,11 @@ body {
         .link_next(15px, 100px, 5px);
       }
       .all_news {
-        .news1 {.news}
-        .news2 {.news}
-        .news3 {.news}
-        .news4 {.news}
-        .news5 {.news}
+        .news1 {.news(@pic:"pic/last_news_img1.png")}
+        .news2 {.news(@pic:"pic/last_news_img2.png")}
+        .news3 {.news(@pic:"pic/last_news_img3.png")}
+        .news4 {.news(@pic:"pic/last_news_img4.png")}
+        .news5 {.news(@pic:"pic/last_news_img5.png")}
       }
     }
     .answer_on_qwestion {
