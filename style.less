@@ -43,11 +43,69 @@
 .chapter {
   position: relative;
   display: inline-block;
-  background-color: lightgreen;
+  //background-color: lightgreen;
   width: 332px;
   height: 200px;
   margin-left: 15px;
   top: 25px;
+  .line1 {
+    position: absolute;
+    top: 10px;
+    width:70px;
+    border-top:1px solid gray;
+  }
+  .head_line{
+    position: absolute;
+    top:0;
+    left: 95px;
+    font-family: 'Cuprum', serif;
+    color: #484848;
+  }
+  .line2{
+    .line1();
+    right: 0;
+  }
+  .links1 {
+    position: absolute;
+    display: inline-block;
+    top: 15px;
+    font-size: 0.8em;
+    line-height: 10px;
+    width: 145px;
+    color: #16557C;
+    //border: 1px solid black;
+    .lin {
+      float: right;
+      margin-top: 15px;
+      &:hover {
+        color: orange;
+        text-decoration-line: underline;
+        cursor: pointer;
+        font-weight: bold;
+      }
+    }
+  }
+  .count1 {
+    .links1();
+    right:170px;
+    width:10px;
+    .co {
+      color: orange;
+      font-weight: bold;
+      margin-top: 15px;
+      width:10px;
+      height: 10px;
+      display: block;
+    }
+  }
+  .links2 {
+    .links1();
+    right: 15px;
+  }
+  .count2 {
+    .count1();
+    right:0;
+  }
 }
 .news(@pic) {
   position: relative;
@@ -300,6 +358,7 @@ body {
     height: 234px;
     width: @width_area;
     border-radius: @radius;
+    cursor: pointer;
     .shadow;
     background-image: url('pic/dobro_shop.png');
   }
@@ -546,6 +605,7 @@ body {
             left:20px;
             height: 33px;
             width: 200px;
+            cursor: pointer;
             .image('pic/Buy.png','pic/Buy_over.png');
           }
       }
@@ -610,6 +670,7 @@ body {
         right: 18px;
         height: 43px;
         width: 211px;
+        cursor: pointer;
         .image('pic/ask_question.png','pic/ask_question_over.png');
         background-repeat: no-repeat;
       }
@@ -653,6 +714,14 @@ body {
       .link2 {.links}
       .link3 {.links}
     }
+    .subscribe {
+      position: absolute;
+      top: 160px;
+      height: 65px;
+      width: 330px;
+      background-color: lightgreen;
+      margin-left: 10px;
+    }
     .big_links {
       position: absolute;
       top: 0 ;
@@ -677,6 +746,7 @@ body {
     left:290px;
     height: 48px;
     width: 221px;
+    cursor: pointer;
     .image('pic/Support_project_small.png','pic/Support_project_small_over.png');
   }
   .consult_button {
@@ -685,6 +755,7 @@ body {
     left: 538px;
     height: 48px;
     width: 221px;
+    cursor: pointer;
     .image('pic/Consult.png','pic/Consult_over.png');
     background-repeat: no-repeat;
   }
