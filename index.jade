@@ -27,6 +27,22 @@ mixin last_news_articles
         P(class = 'link')
             a(href="#") подробнее...
 
+mixin question_answer_two
+    p(class='first') Вопрос:
+    p(class='second') Харе Кришна, примите мои поклоны. Нигде не могу найти информацию. Почему в каждой вселенной существует свой брахма.
+    p(class='first') Ответ:
+    p(class='second') Обратимся за ответом к Патита Паване прабху и Аударье Дхаме прабху
+    div.read_all читать весь ответ
+mixin bottom_links_small
+    p
+        a Рузов В.О. (Об авторе)
+    p
+        a Личные встречи
+    p
+        a Расписание поездок
+mixin bottom_links_big
+    p
+
 block content
     .main
         include Tamplate/menu
@@ -223,6 +239,10 @@ block content
                 .text_ask ОТВЕТЫ НА ВОПРОСЫ
                 .link_all_question
                     a(href= "#") все вопросы/ответы
+                .question_answer1
+                    +question_answer_two
+                .question_answer2
+                    +question_answer_two
                 .ask_question_button
             .vidjet_vk
                 div#vk_groups
@@ -230,12 +250,17 @@ block content
         .main
             .all_links
                 .link1
+                    +bottom_links_small
                 .link2
+                    +bottom_links_small
                 .link3
+                    +bottom_links_small
             .subscribe
             .big_links
                 .link4
+                    +bottom_links_big
                 .link5
+                    +bottom_links_big
 
     include tamplate/footer
     //script(src='my_code.js', type='text/javascript')
