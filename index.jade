@@ -40,8 +40,22 @@ mixin bottom_links_small
         a Личные встречи
     p
         a Расписание поездок
-mixin bottom_links_big
+mixin bottom_links_big(name_links)
+    p= name_links
     p
+        a Рузов В.О. (Об авторе)
+    p
+        a Личные встречи
+    p
+        a Расписание поездок
+    p
+        a Рузов В.О. (Об авторе)
+    p
+        a Личные встречи
+    p
+        a Расписание поездок
+    p
+        a Расписание поездок
 
 block content
     .main
@@ -132,6 +146,10 @@ block content
             .text_schedule РАСПИСАНИЕ ЛЕКЦИЙ КЛУБА
             .link_contact
                 a(href= "#") Контакты клуба "Баланс"
+            .arrow_left
+            .fon_slider_schedule
+                //.img_schedule
+            .arrow_right
             div.shop_buy
                 .head_shop_buy
                 .body_shop_buy
@@ -256,11 +274,15 @@ block content
                 .link3
                     +bottom_links_small
             .subscribe
+                .text ПОДПИШИСЬ НА НАШИ НОВОСТИ:
+                .input_area
+                    p введите ваш e-mail
+                    .button_subscribe
             .big_links
                 .link4
-                    +bottom_links_big
+                    +bottom_links_big('ОБРАЗОВАНИЕ')
                 .link5
-                    +bottom_links_big
+                    +bottom_links_big('ПРОЕКТЫ')
 
     include tamplate/footer
     //script(src='my_code.js', type='text/javascript')

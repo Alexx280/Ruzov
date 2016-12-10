@@ -238,6 +238,7 @@ body {
   height: 48px;
   width: 48px;
   background-image: url('pic/Right_arrow.png');
+  background-repeat: no-repeat;
 }
 #next:hover {
   background-image: url('pic/Right_arrow_over.png');
@@ -247,6 +248,7 @@ body {
   height: 48px;
   width: 48px;
   background-image: url('pic/Left_arrow.png');
+  background-repeat: no-repeat;
 }
 #previous:hover {
   background-image: url('pic/Left_arrow_over.png');
@@ -471,6 +473,7 @@ body {
   height: 56px;
   width: 211px;
   background-image: url('pic/Support_project_button.png');
+  background-repeat: no-repeat;
 }
 .left_block .autor_area .support_button:hover {
   background-image: url('pic/Support_project_button_over.png');
@@ -922,8 +925,60 @@ body {
 .schedule_area .main .link_contact a {
   color: #ffffff;
 }
+.schedule_area .main .arrow_left {
+  position: absolute;
+  left: 2px;
+  bottom: 60px;
+  width: 15px;
+  height: 23px;
+  background-image: url('pic/arrow_left_schedule.png');
+  background-repeat: no-repeat;
+}
+.schedule_area .main .arrow_left:hover {
+  background-image: url('pic/arrow_left_schedule_over.png');
+}
+.schedule_area .main .arrow_left:hover {
+  bottom: 63px;
+  left: 0;
+}
+.schedule_area .main .arrow_right {
+  position: absolute;
+  left: 695px;
+  bottom: 60px;
+  width: 15px;
+  height: 23px;
+  background-image: url('pic/arrow_right_schedule.png');
+  background-repeat: no-repeat;
+}
+.schedule_area .main .arrow_right:hover {
+  background-image: url('pic/arrow_right_schedule_over.png');
+}
+.schedule_area .main .arrow_right:hover {
+  bottom: 63px;
+  left: 693px;
+}
+.schedule_area .main .fon_slider_schedule {
+  position: absolute;
+  top: 60px;
+  left: 30px;
+  border-radius: 5px;
+  background-color: #4F6070;
+  height: 365px;
+  width: 650px;
+}
+.schedule_area .main .fon_slider_schedule .img_schedule {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  height: 440px;
+  width: 853px;
+  background-color: #ff0000;
+  z-index: 15;
+  margin: 0;
+}
 .schedule_area .main .shop_buy {
   position: absolute;
+  margin-right: -10px;
   right: 0;
   width: 250px;
   height: 300px;
@@ -983,6 +1038,7 @@ body {
   width: 200px;
   cursor: pointer;
   background-image: url('pic/Buy.png');
+  background-repeat: no-repeat;
 }
 .schedule_area .main .shop_buy .body_shop_buy .buy_button:hover {
   background-image: url('pic/Buy_over.png');
@@ -1253,7 +1309,7 @@ body {
 }
 .inform_area .main .last_news .text_last_news {
   position: absolute;
-  top: 100;
+  top: 0;
   left: 35px;
   width: 400px;
   height: 50px;
@@ -1714,6 +1770,22 @@ body {
   width: 250px;
   height: 250px;
 }
+.list_link p {
+  line-height: 8px;
+  margin-top: 0;
+  vertical-align: top;
+  color: #404F5B;
+}
+.list_link p a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+.list_link p a:hover {
+  color: #A5CCEE;
+  text-decoration: underline;
+}
 .links {
   position: relative;
   display: inline-block;
@@ -1727,6 +1799,7 @@ body {
   line-height: 8px;
   margin-top: 0;
   vertical-align: top;
+  color: #404F5B;
 }
 .links p a {
   color: white;
@@ -1745,7 +1818,22 @@ body {
   margin-left: 10px;
   height: 160px;
   width: 200px;
-  background-color: lightgreen;
+}
+.links_big p {
+  line-height: 8px;
+  margin-top: 0;
+  vertical-align: top;
+  color: #404F5B;
+}
+.links_big p a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+.links_big p a:hover {
+  color: #A5CCEE;
+  text-decoration: underline;
 }
 .bottom_links_area {
   position: relative;
@@ -1782,8 +1870,60 @@ body {
 .bottom_links_area .main .link_contact a {
   color: #ffffff;
 }
+.bottom_links_area .main .arrow_left {
+  position: absolute;
+  left: 2px;
+  bottom: 60px;
+  width: 15px;
+  height: 23px;
+  background-image: url('pic/arrow_left_schedule.png');
+  background-repeat: no-repeat;
+}
+.bottom_links_area .main .arrow_left:hover {
+  background-image: url('pic/arrow_left_schedule_over.png');
+}
+.bottom_links_area .main .arrow_left:hover {
+  bottom: 63px;
+  left: 0;
+}
+.bottom_links_area .main .arrow_right {
+  position: absolute;
+  left: 695px;
+  bottom: 60px;
+  width: 15px;
+  height: 23px;
+  background-image: url('pic/arrow_right_schedule.png');
+  background-repeat: no-repeat;
+}
+.bottom_links_area .main .arrow_right:hover {
+  background-image: url('pic/arrow_right_schedule_over.png');
+}
+.bottom_links_area .main .arrow_right:hover {
+  bottom: 63px;
+  left: 693px;
+}
+.bottom_links_area .main .fon_slider_schedule {
+  position: absolute;
+  top: 60px;
+  left: 30px;
+  border-radius: 5px;
+  background-color: #4F6070;
+  height: 365px;
+  width: 650px;
+}
+.bottom_links_area .main .fon_slider_schedule .img_schedule {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  height: 440px;
+  width: 853px;
+  background-color: #ff0000;
+  z-index: 15;
+  margin: 0;
+}
 .bottom_links_area .main .shop_buy {
   position: absolute;
+  margin-right: -10px;
   right: 0;
   width: 250px;
   height: 300px;
@@ -1843,6 +1983,7 @@ body {
   width: 200px;
   cursor: pointer;
   background-image: url('pic/Buy.png');
+  background-repeat: no-repeat;
 }
 .bottom_links_area .main .shop_buy .body_shop_buy .buy_button:hover {
   background-image: url('pic/Buy_over.png');
@@ -1863,6 +2004,7 @@ body {
   line-height: 8px;
   margin-top: 0;
   vertical-align: top;
+  color: #404F5B;
 }
 .bottom_links_area .main .all_links .link1 p a {
   color: white;
@@ -1887,6 +2029,7 @@ body {
   line-height: 8px;
   margin-top: 0;
   vertical-align: top;
+  color: #404F5B;
 }
 .bottom_links_area .main .all_links .link2 p a {
   color: white;
@@ -1911,6 +2054,7 @@ body {
   line-height: 8px;
   margin-top: 0;
   vertical-align: top;
+  color: #404F5B;
 }
 .bottom_links_area .main .all_links .link3 p a {
   color: white;
@@ -1927,8 +2071,37 @@ body {
   top: 160px;
   height: 65px;
   width: 330px;
-  background-color: lightgreen;
   margin-left: 10px;
+}
+.bottom_links_area .main .subscribe .text {
+  color: white;
+  font-size: 13px;
+}
+.bottom_links_area .main .subscribe .input_area {
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  height: 40px;
+  width: 320px;
+  bottom: 0;
+}
+.bottom_links_area .main .subscribe .input_area p {
+  vertical-align: top;
+  line-height: 7px;
+  margin-left: 15px;
+  color: #CACACA;
+}
+.bottom_links_area .main .subscribe .input_area .button_subscribe {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 97px;
+  height: 32px;
+  background-image: url('pic/subscribe_button.png');
+  background-repeat: no-repeat;
+}
+.bottom_links_area .main .subscribe .input_area .button_subscribe:hover {
+  background-image: url('pic/subscribe_button_over.png');
 }
 .bottom_links_area .main .big_links {
   position: absolute;
@@ -1942,7 +2115,22 @@ body {
   margin-left: 10px;
   height: 160px;
   width: 200px;
-  background-color: lightgreen;
+}
+.bottom_links_area .main .big_links .link4 p {
+  line-height: 8px;
+  margin-top: 0;
+  vertical-align: top;
+  color: #404F5B;
+}
+.bottom_links_area .main .big_links .link4 p a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+.bottom_links_area .main .big_links .link4 p a:hover {
+  color: #A5CCEE;
+  text-decoration: underline;
 }
 .bottom_links_area .main .big_links .link5 {
   position: relative;
@@ -1951,7 +2139,22 @@ body {
   margin-left: 10px;
   height: 160px;
   width: 200px;
-  background-color: lightgreen;
+}
+.bottom_links_area .main .big_links .link5 p {
+  line-height: 8px;
+  margin-top: 0;
+  vertical-align: top;
+  color: #404F5B;
+}
+.bottom_links_area .main .big_links .link5 p a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+.bottom_links_area .main .big_links .link5 p a:hover {
+  color: #A5CCEE;
+  text-decoration: underline;
 }
 .footer {
   position: relative;
@@ -1971,6 +2174,7 @@ body {
   width: 221px;
   cursor: pointer;
   background-image: url('pic/Support_project_small.png');
+  background-repeat: no-repeat;
 }
 .footer .support_button:hover {
   background-image: url('pic/Support_project_small_over.png');
