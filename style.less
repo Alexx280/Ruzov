@@ -606,16 +606,37 @@ body {
       background-color: #4F6070;
       height: 365px;
       width: 650px;
-      .img_schedule {
-        position: absolute;
-        bottom: 5px;
+      .img_schedule_slider {
+        position: relative;
+        top: 5px;
         left: 5px;
-        height: 440px;
-        width: 853px;
+        height: 273px;
+        width: 640px;
         //background-image: url('pic/img_schedule.png');
-        background-color: #ff0000;
-        z-index: 15;
-        margin: 0;
+        //z-index: 15;
+        //margin: 0;
+        .monitor {
+          width: 630px;
+          height: 320px;
+          //border: 1px solid black;
+          position: relative;
+          top: 0;
+          margin: 5px;
+          overflow: hidden;
+          padding: -10px;
+          ul {
+            position: absolute;
+            display: block;
+            top:-5px;
+            margin-top: 0;
+            margin-left: -40px;
+            width: 9400px;
+            height: 320px;
+            li {
+              float: left
+            }
+          }
+        }
       }
     }
     .shop_buy {

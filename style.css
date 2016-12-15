@@ -966,15 +966,33 @@ body {
   height: 365px;
   width: 650px;
 }
-.schedule_area .main .fon_slider_schedule .img_schedule {
-  position: absolute;
-  bottom: 5px;
+.schedule_area .main .fon_slider_schedule .img_schedule_slider {
+  position: relative;
+  top: 5px;
   left: 5px;
-  height: 440px;
-  width: 853px;
-  background-color: #ff0000;
-  z-index: 15;
-  margin: 0;
+  height: 273px;
+  width: 640px;
+}
+.schedule_area .main .fon_slider_schedule .img_schedule_slider .monitor {
+  width: 630px;
+  height: 320px;
+  position: relative;
+  top: 0;
+  margin: 5px;
+  overflow: hidden;
+  padding: -10px;
+}
+.schedule_area .main .fon_slider_schedule .img_schedule_slider .monitor ul {
+  position: absolute;
+  display: block;
+  top: -5px;
+  margin-top: 0;
+  margin-left: -40px;
+  width: 9400px;
+  height: 320px;
+}
+.schedule_area .main .fon_slider_schedule .img_schedule_slider .monitor ul li {
+  float: left;
 }
 .schedule_area .main .shop_buy {
   position: absolute;
@@ -1911,15 +1929,33 @@ body {
   height: 365px;
   width: 650px;
 }
-.bottom_links_area .main .fon_slider_schedule .img_schedule {
-  position: absolute;
-  bottom: 5px;
+.bottom_links_area .main .fon_slider_schedule .img_schedule_slider {
+  position: relative;
+  top: 5px;
   left: 5px;
-  height: 440px;
-  width: 853px;
-  background-color: #ff0000;
-  z-index: 15;
-  margin: 0;
+  height: 273px;
+  width: 640px;
+}
+.bottom_links_area .main .fon_slider_schedule .img_schedule_slider .monitor {
+  width: 630px;
+  height: 320px;
+  position: relative;
+  top: 0;
+  margin: 5px;
+  overflow: hidden;
+  padding: -10px;
+}
+.bottom_links_area .main .fon_slider_schedule .img_schedule_slider .monitor ul {
+  position: absolute;
+  display: block;
+  top: -5px;
+  margin-top: 0;
+  margin-left: -40px;
+  width: 9400px;
+  height: 320px;
+}
+.bottom_links_area .main .fon_slider_schedule .img_schedule_slider .monitor ul li {
+  float: left;
 }
 .bottom_links_area .main .shop_buy {
   position: absolute;
