@@ -931,6 +931,7 @@ body {
   bottom: 60px;
   width: 15px;
   height: 23px;
+  cursor: pointer;
   background-image: url('pic/arrow_left_schedule.png');
   background-repeat: no-repeat;
 }
@@ -947,6 +948,7 @@ body {
   bottom: 60px;
   width: 15px;
   height: 23px;
+  cursor: pointer;
   background-image: url('pic/arrow_right_schedule.png');
   background-repeat: no-repeat;
 }
@@ -972,15 +974,17 @@ body {
   left: 5px;
   height: 273px;
   width: 640px;
+  padding-left: 5px;
 }
 .schedule_area .main .fon_slider_schedule .img_schedule_slider .monitor {
   width: 630px;
   height: 320px;
   position: relative;
   top: 0;
-  margin: 5px;
+  margin-top: 5px;
   overflow: hidden;
   padding: -10px;
+  z-index: 5;
 }
 .schedule_area .main .fon_slider_schedule .img_schedule_slider .monitor ul {
   position: absolute;
@@ -993,6 +997,22 @@ body {
 }
 .schedule_area .main .fon_slider_schedule .img_schedule_slider .monitor ul li {
   float: left;
+}
+.schedule_area .main .fon_slider_schedule .img_schedule_slider .schedule_button {
+  position: relative;
+  top: -50px;
+  background-color: white;
+  width: 155px;
+  height: 75px;
+  display: inline-block;
+  margin-right: 3px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  cursor: pointer;
+  z-index: 6;
+}
+.schedule_area .main .fon_slider_schedule .img_schedule_slider .schedule_button:hover {
+  background-color: #AABBDD;
 }
 .schedule_area .main .shop_buy {
   position: absolute;
@@ -1336,7 +1356,7 @@ body {
 }
 .inform_area .main .last_news .last_news_icon {
   position: absolute;
-  top: 100;
+  top: 0;
   left: 0;
   height: 30px;
   width: 30px;
@@ -1894,6 +1914,7 @@ body {
   bottom: 60px;
   width: 15px;
   height: 23px;
+  cursor: pointer;
   background-image: url('pic/arrow_left_schedule.png');
   background-repeat: no-repeat;
 }
@@ -1910,6 +1931,7 @@ body {
   bottom: 60px;
   width: 15px;
   height: 23px;
+  cursor: pointer;
   background-image: url('pic/arrow_right_schedule.png');
   background-repeat: no-repeat;
 }
@@ -1935,15 +1957,17 @@ body {
   left: 5px;
   height: 273px;
   width: 640px;
+  padding-left: 5px;
 }
 .bottom_links_area .main .fon_slider_schedule .img_schedule_slider .monitor {
   width: 630px;
   height: 320px;
   position: relative;
   top: 0;
-  margin: 5px;
+  margin-top: 5px;
   overflow: hidden;
   padding: -10px;
+  z-index: 5;
 }
 .bottom_links_area .main .fon_slider_schedule .img_schedule_slider .monitor ul {
   position: absolute;
@@ -1956,6 +1980,22 @@ body {
 }
 .bottom_links_area .main .fon_slider_schedule .img_schedule_slider .monitor ul li {
   float: left;
+}
+.bottom_links_area .main .fon_slider_schedule .img_schedule_slider .schedule_button {
+  position: relative;
+  top: -50px;
+  background-color: white;
+  width: 155px;
+  height: 75px;
+  display: inline-block;
+  margin-right: 3px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  cursor: pointer;
+  z-index: 6;
+}
+.bottom_links_area .main .fon_slider_schedule .img_schedule_slider .schedule_button:hover {
+  background-color: #AABBDD;
 }
 .bottom_links_area .main .shop_buy {
   position: absolute;

@@ -50,7 +50,7 @@ gulp.task('browserSync', function(){
 
 gulp.task('watch', ['browserSync', 'css-libs', 'scripts'],function(){
     gulp.watch('app/sass/**/*.sass', ['sass'])
-    gulp.watch('*.less', ['less'])
+    gulp.watch('*.less', ['less'], browserSync.reload)
     gulp.watch('*.html', browserSync.reload)
     gulp.watch('js/**/*.js', browserSync.reload)
 });
