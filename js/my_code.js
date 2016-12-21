@@ -1,14 +1,18 @@
 $(document).ready(function(){
     $('.hov').hover(function(){$(this).children('img').attr('src', 'pic/arrow_autor_over.png');},
                     function(){$(this).children('img').attr('src', 'pic/arrow_autor.png');});
+    $('[class^="small_view"]').hover(function(){$(this).children('[class^="select2"]').css('display', 'block');},
+                                     function(){$(this).children('[class^="select2"]').css('display', '');});
 
     /*$('.schedule_button').hover(
      function(){$(this).css('background-color', '#AABBDD')},
      function(){$(this).css('background-color', '#fff')}
      );*/
-    /*$('.schedule_button').on('click', function(){$('.schedule_button').css('background-color', '#fff')});
+    $('.schedule_button').on('click', function(){$('.schedule_button').css('background-color', '')});
     $('.schedule_button').on('click', function(){$(this).css('background-color', '#556677')});
-*/
+    $('[class^="small_view"]').on('click', function(){$('[class^="select1"]').css('display', '')});
+    $('[class^="small_view"]').on('click', function(){$(this).children('[class^="select1"]').css('display', 'block')});
+
 });
 
 $(function() {
@@ -18,7 +22,7 @@ $(function() {
         slideCount = $('.slider img').length,               // Количество слайдов
         prev = $('.slider-box .prev'),                      // Кнопка "назад"
         next = $('.slider-box .next'),                      // Кнопка "вперед"
-        sliderInterval = 3300,                              // Интервал смены слайдов
+        sliderInterval = 5300,                              // Интервал смены слайдов
         animateTime = 1000,                                 // Время смены слайдов
         course = 1,                                         // Направление движения слайдера (1 или -1)
         margin = - slideWidth;                              // Первоначальное смещение слайдов
