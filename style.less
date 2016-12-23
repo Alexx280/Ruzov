@@ -4,6 +4,7 @@
 @width_area:240px;
 @icon: 30px;
 @autor_link: 25px;
+@blue_text: #16557C;
 .shadow(){
   box-shadow: 0 0 3px gray;}
 
@@ -33,7 +34,7 @@
   height: 20px;
   font-weight: bold;
   font-size: 12px;
-  a {color: #16557C;
+  a {color: @blue_text;
     &:hover {
       color: orange;
     }
@@ -42,7 +43,6 @@
 .chapter {
   position: relative;
   display: inline-block;
-  //background-color: lightgreen;
   width: 332px;
   height: 200px;
   margin-left: 15px;
@@ -71,8 +71,7 @@
     font-size: 0.8em;
     line-height: 10px;
     width: 145px;
-    color: #16557C;
-    //border: 1px solid black;
+    color: @blue_text;
     .lin {
       float: right;
       margin-top: 15px;
@@ -113,7 +112,6 @@
   margin-left:8px;
   height: 275px;
   width: 180px;
-  //background-color: lightgreen;
   vertical-align:top;
   &:hover {
     .fon .image_art_shadow {opacity: 0;};
@@ -157,7 +155,7 @@
     vertical-align:top;
     cursor: pointer;
     .toptext {
-      color: #16557C;
+      color: @blue_text;
       font-weight: bold;
     }
     .text {
@@ -171,11 +169,10 @@
   height:110px;
   left:20px;
   top:@top_qa;
-  //border: 1px solid red;
   line-height: 14px;
   font-size: 13px;
   padding-top: 0;
-  .first {font-weight: bold; color: #16557C; margin-top: 3px;};
+  .first {font-weight: bold; color: @blue_text; margin-top: 3px;};
   .second {margin-top: -10px;}
   .read_all {
     position: absolute;
@@ -183,8 +180,7 @@
     bottom: 15px;
     width: 105px;
     height: 20px;
-    //border: 1px solid red;
-    color: #16557C;
+    color: @blue_text;
     text-decoration-line: underline;
     cursor: pointer;
     &:hover {color:orange;}
@@ -225,7 +221,6 @@ body {
   width: 960px;
   height: 1130px;
   margin: 0 auto;
-  //border: 1px solid black;
 }
 .logo{
   height: 75px;
@@ -240,23 +235,68 @@ body {
   float: right;
   margin-top: 25px;
   box-shadow: 1px 1px 4px gray;
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
+  display:inline-block;
+  vertical-align: middle;
   padding-right: 7px;
-  padding-left: 25px;
+  padding-left: 0;
+  @media screen and (max-width: 840px) {
+    background-color: lightgreen;
+    }
   div {
     width: auto;
-    height: auto;
-    display: inline;
-    div {margin-right: 10px}
+    height:45px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 40px;
+    &:hover {background-color: #8DA1B3; color:#fff;}
+    div {margin-right: 10px; height: 96%}
   }
+
+  .autor{
+    width:70px;
+    padding-left:20px;
+    border-top-left-radius: @radius;
+    border-bottom-left-radius: @radius;
+    .menu_inter{
+      position: absolute;
+      top: 71px;
+      left: 258px;
+      width: 702px;
+      height: 380px;
+      z-index: 10;
+      border-radius: @radius;
+      background-color: #fff;
+      box-shadow: 1px 1px 4px gray;
+      display: none;
+    }
+    .out {display: block}
+  }
+  .spirit_part, .doing_part, .project{
+    padding-left:8px;
+    padding-right: 5px;
+    .menu_inter{
+      position: absolute;
+      top: 71px;
+      left: 258px;
+      width: 702px;
+      height: 380px;
+      z-index: 10;
+      border-radius: @radius;
+      background-color: #fff;
+      box-shadow: 1px 1px 4px gray;
+      display: none;
+    }
+    .out {display: block}
+    .hide_block {display: none;}
+  }
+  .project{margin-right: 5px;}
   .find {
     width: 155px;
     height: 26px;
     background-color: #eaecee;
     border: 1px solid gray;
     border-radius: @radius;
+    &:hover {background-color: #eaecee;}
   }
   .find_button {
     position: absolute;
@@ -274,30 +314,6 @@ body {
   width: 960px;
   border-radius: @radius;
   .shadow;
-  /*.monitor {
-    width: 938px;
-    height: 320px;
-    border: 1px solid black;
-    position: relative;
-    top: 10px;
-    margin: 10px;
-    overflow: hidden;
-    ul {
-      margin-top: -2px;
-      margin-left: -40px;
-      width: 9400px;
-      height: 320px;
-      li {
-        float: left
-      }
-    }
-  }
-  .arrow {
-    position: absolute;
-    top: 150px;
-    height: 50px;
-    width: 50px;
-  }*/
   .slider-box{
     position:relative;
     top:9px;
@@ -364,10 +380,10 @@ body {
     .small_view1 {.small_view('pic/small_view1.png');
 
     };
-    .small_view2 {.small_view('pic/small_view2.png', @topp: 70px)}
-    .small_view3 {.small_view('pic/small_view3.png', @topp: 130px)}
-    .small_view4 {.small_view('pic/small_view4.png', @topp: 190px)}
-    .small_view5 {.small_view('pic/small_view5.png', @topp: 250px)}
+    .small_view2 {.small_view('pic/small_view2.png', @topp: 72px)}
+    .small_view3 {.small_view('pic/small_view3.png', @topp: 134px)}
+    .small_view4 {.small_view('pic/small_view4.png', @topp: 196px)}
+    .small_view5 {.small_view('pic/small_view5.png', @topp: 258px)}
   }
   .slider{
     position:relative;
@@ -377,9 +393,6 @@ body {
       float:left;
     }
   }
-  /*.slider img{
-    float:left;
-  }*/
   .slider-box .prev, .slider-box .next{
     position:absolute;
     top:100px;
@@ -427,7 +440,6 @@ body {
   font-weight: bold;
   border-bottom: 1px solid gray;
   color: #285E82;
-  //background-color: lightgoldenrodyellow;
   font-size: 13px;
   cursor: pointer;
   &:hover {
@@ -749,8 +761,32 @@ body {
           border-bottom-left-radius: @radius;
           cursor: pointer;
           z-index: 6;
-          &:hover {background-color: #AABBDD}
-          &:active {background-color: #556677}
+          vertical-align: top;
+          &:hover {background-color: #AABBDD;
+            .sched_date {
+              color: black;}
+            .sched_text {
+              color: black;}
+          }
+          .sched_date {
+            color: #16557C;
+            vertical-align: top;
+            position: absolute;
+            top:10px;
+            left:10px;
+            font-size: 0.7em;
+            font-weight: bold;
+          };
+          .sched_text {
+            color: gray;
+            width:80%;
+            vertical-align: top;
+            position: absolute;
+            top:25px;
+            left:10px;
+            font-size: 0.7em;
+            font-weight: bold;
+          }
         }
       }
     }

@@ -1,17 +1,27 @@
 $(document).ready(function(){
+    var small_view = $('[class^="small_view"]');
+    var sch_butt = $('.schedule_button');
+
+    //Изменение цвета стрелки в меню АВТОР
     $('.hov').hover(function(){$(this).children('img').attr('src', 'pic/arrow_autor_over.png');},
                     function(){$(this).children('img').attr('src', 'pic/arrow_autor.png');});
-    $('[class^="small_view"]').hover(function(){$(this).children('[class^="select2"]').css('display', 'block');},
-                                     function(){$(this).children('[class^="select2"]').css('display', '');});
 
-    /*$('.schedule_button').hover(
-     function(){$(this).css('background-color', '#AABBDD')},
-     function(){$(this).css('background-color', '#fff')}
-     );*/
-    $('.schedule_button').on('click', function(){$('.schedule_button').css('background-color', '')});
-    $('.schedule_button').on('click', function(){$(this).css('background-color', '#556677')});
-    $('[class^="small_view"]').on('click', function(){$('[class^="select1"]').css('display', '')});
-    $('[class^="small_view"]').on('click', function(){$(this).children('[class^="select1"]').css('display', 'block')});
+    // изменение цвета фона кнопки в слайдере расписания
+    sch_butt.on('click', function(){$('.schedule_button').css('background-color', '')});
+    sch_butt.on('click', function(){$(this).css('background-color', '#556677')});
+    // открытие верхнего меню
+    $('.menu div').on('click', function () {$(this).children('.menu_inter').toggleClass('out')});
+    $('.menu > div').hover(function(){$('.menu > div').children('.menu_inter').removeClass('out');});
+    //Изменение света текста кнопок
+    sch_butt.on('click', function(){$('.sched_date').css('color', '')});
+    sch_butt.on('click', function(){$(this).children('.sched_date').css('color', '#fff')});
+    sch_butt.on('click', function(){$('.sched_text').css('color', '')});
+    sch_butt.on('click', function(){$(this).children('.sched_text').css('color', '#fff')});
+    // Выделение мини картинок при клике на главном слайдере
+    small_view.on('click', function(){$('[class^="select1"]').css('display', '')});
+    small_view.on('click', function(){$(this).children('[class^="select1"]').css('display', 'block')});
+    small_view.hover(function(){$(this).children('[class^="select2"]').css('display', 'block');},
+                     function(){$(this).children('[class^="select2"]').css('display', '');});
 
 });
 
