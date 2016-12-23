@@ -172,19 +172,84 @@ body {
   float: right;
   margin-top: 25px;
   box-shadow: 1px 1px 4px gray;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: inline-block;
+  vertical-align: middle;
   padding-right: 7px;
-  padding-left: 25px;
+  padding-left: 0;
+}
+@media screen and (max-width: 840px) {
+  .menu {
+    background-color: lightgreen;
+  }
 }
 .menu div {
   width: auto;
-  height: auto;
-  display: inline;
+  height: 45px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 40px;
+}
+.menu div:hover {
+  background-color: #8DA1B3;
+  color: #fff;
 }
 .menu div div {
   margin-right: 10px;
+  height: 96%;
+}
+.menu .autor {
+  width: 70px;
+  padding-left: 20px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.menu .autor .menu_inter {
+  position: absolute;
+  top: 71px;
+  left: 258px;
+  width: 702px;
+  height: 380px;
+  z-index: 10;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 1px 1px 4px gray;
+  display: none;
+}
+.menu .autor .out {
+  display: block;
+}
+.menu .spirit_part,
+.menu .doing_part,
+.menu .project {
+  padding-left: 8px;
+  padding-right: 5px;
+}
+.menu .spirit_part .menu_inter,
+.menu .doing_part .menu_inter,
+.menu .project .menu_inter {
+  position: absolute;
+  top: 71px;
+  left: 258px;
+  width: 702px;
+  height: 380px;
+  z-index: 10;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 1px 1px 4px gray;
+  display: none;
+}
+.menu .spirit_part .out,
+.menu .doing_part .out,
+.menu .project .out {
+  display: block;
+}
+.menu .spirit_part .hide_block,
+.menu .doing_part .hide_block,
+.menu .project .hide_block {
+  display: none;
+}
+.menu .project {
+  margin-right: 5px;
 }
 .menu .find {
   width: 155px;
@@ -192,6 +257,9 @@ body {
   background-color: #eaecee;
   border: 1px solid gray;
   border-radius: 5px;
+}
+.menu .find:hover {
+  background-color: #eaecee;
 }
 .menu .find_button {
   position: absolute;
@@ -208,33 +276,6 @@ body {
   width: 960px;
   border-radius: 5px;
   box-shadow: 0 0 3px gray;
-  /*.monitor {
-    width: 938px;
-    height: 320px;
-    border: 1px solid black;
-    position: relative;
-    top: 10px;
-    margin: 10px;
-    overflow: hidden;
-    ul {
-      margin-top: -2px;
-      margin-left: -40px;
-      width: 9400px;
-      height: 320px;
-      li {
-        float: left
-      }
-    }
-  }
-  .arrow {
-    position: absolute;
-    top: 150px;
-    height: 50px;
-    width: 50px;
-  }*/
-  /*.slider img{
-    float:left;
-  }*/
 }
 .head .slider-box {
   position: relative;
@@ -302,7 +343,7 @@ body {
 }
 .head .slider-box .small_view2 {
   position: absolute;
-  top: 70px;
+  top: 72px;
   left: 10px;
   height: 54px;
   width: 94px;
@@ -358,7 +399,7 @@ body {
 }
 .head .slider-box .small_view3 {
   position: absolute;
-  top: 130px;
+  top: 134px;
   left: 10px;
   height: 54px;
   width: 94px;
@@ -414,7 +455,7 @@ body {
 }
 .head .slider-box .small_view4 {
   position: absolute;
-  top: 190px;
+  top: 196px;
   left: 10px;
   height: 54px;
   width: 94px;
@@ -470,7 +511,7 @@ body {
 }
 .head .slider-box .small_view5 {
   position: absolute;
-  top: 250px;
+  top: 258px;
   left: 10px;
   height: 54px;
   width: 94px;
@@ -1328,12 +1369,35 @@ body {
   border-bottom-left-radius: 5px;
   cursor: pointer;
   z-index: 6;
+  vertical-align: top;
 }
 .schedule_area .main .fon_slider_schedule .img_schedule_slider .schedule_button:hover {
   background-color: #AABBDD;
 }
-.schedule_area .main .fon_slider_schedule .img_schedule_slider .schedule_button:active {
-  background-color: #556677;
+.schedule_area .main .fon_slider_schedule .img_schedule_slider .schedule_button:hover .sched_date {
+  color: black;
+}
+.schedule_area .main .fon_slider_schedule .img_schedule_slider .schedule_button:hover .sched_text {
+  color: black;
+}
+.schedule_area .main .fon_slider_schedule .img_schedule_slider .schedule_button .sched_date {
+  color: #16557C;
+  vertical-align: top;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+.schedule_area .main .fon_slider_schedule .img_schedule_slider .schedule_button .sched_text {
+  color: gray;
+  width: 80%;
+  vertical-align: top;
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  font-size: 0.7em;
+  font-weight: bold;
 }
 .schedule_area .main .shop_buy {
   position: absolute;
@@ -2314,12 +2378,35 @@ body {
   border-bottom-left-radius: 5px;
   cursor: pointer;
   z-index: 6;
+  vertical-align: top;
 }
 .bottom_links_area .main .fon_slider_schedule .img_schedule_slider .schedule_button:hover {
   background-color: #AABBDD;
 }
-.bottom_links_area .main .fon_slider_schedule .img_schedule_slider .schedule_button:active {
-  background-color: #556677;
+.bottom_links_area .main .fon_slider_schedule .img_schedule_slider .schedule_button:hover .sched_date {
+  color: black;
+}
+.bottom_links_area .main .fon_slider_schedule .img_schedule_slider .schedule_button:hover .sched_text {
+  color: black;
+}
+.bottom_links_area .main .fon_slider_schedule .img_schedule_slider .schedule_button .sched_date {
+  color: #16557C;
+  vertical-align: top;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+.bottom_links_area .main .fon_slider_schedule .img_schedule_slider .schedule_button .sched_text {
+  color: gray;
+  width: 80%;
+  vertical-align: top;
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  font-size: 0.7em;
+  font-weight: bold;
 }
 .bottom_links_area .main .shop_buy {
   position: absolute;
