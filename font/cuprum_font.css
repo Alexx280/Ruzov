@@ -25,3 +25,12 @@
 .text_seminar {
     font-family: 'Cuprum', serif;
 }
+
+@font-face {
+    font-family: 'Cuprum Regular'; /* Гарнитура шрифта */
+    src: url(cuprum_regular.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: 'Tahoma Bold'; /* Гарнитура шрифта */
+    src: url(cuprum_regular.ttf); /* Путь к файлу со шрифтом */
+}

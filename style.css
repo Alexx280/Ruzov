@@ -203,7 +203,7 @@ body {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-.menu .autor .menu_inter {
+.menu .autor .menu_inter1 {
   position: absolute;
   top: 71px;
   left: 258px;
@@ -213,7 +213,19 @@ body {
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 1px 1px 4px gray;
-  display: none;
+  display: 'block';
+}
+.menu .autor .menu_inter0 {
+  position: absolute;
+  top: 71px;
+  left: 258px;
+  width: 702px;
+  height: 380px;
+  z-index: 10;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 1px 1px 4px gray;
+  display: block;
 }
 .menu .autor .out {
   display: block;
