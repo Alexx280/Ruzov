@@ -1,3 +1,4 @@
+@import 'font/cuprum_font.css';
 .chapter {
   position: relative;
   display: inline-block;
@@ -124,6 +125,8 @@
   height: 10px;
   display: block;
 }
+/*
+
 @font-face {
   font-family: 'Cuprum';
   src: local('Cuprum'), local('Cuprum-Regular'), url('http://64424.selcdn.ru/webfonts/cuprum/400.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/cuprum/400.woff') format('woff');
@@ -148,6 +151,7 @@
   font-weight: 700;
   font-style: italic;
 }
+*/
 body {
   background-color: #eaecee;
   margin: 0;
@@ -188,6 +192,7 @@ body {
   display: inline-block;
   vertical-align: middle;
   line-height: 40px;
+  font-family: 'Cuprum Regular', serif;
 }
 .menu div:hover {
   background-color: #8DA1B3;
@@ -203,7 +208,7 @@ body {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-.menu .autor .menu_inter1 {
+.menu .autor .menu_inter {
   position: absolute;
   top: 71px;
   left: 258px;
@@ -213,19 +218,26 @@ body {
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 1px 1px 4px gray;
-  display: 'block';
+  display: none;
 }
-.menu .autor .menu_inter0 {
+.menu .autor .menu_inter .inter_top {
+  position: relative;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  background-color: #8DA1B3;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.menu .autor .menu_inter .inter_left {
   position: absolute;
-  top: 71px;
-  left: 258px;
-  width: 702px;
-  height: 380px;
-  z-index: 10;
-  border-radius: 5px;
-  background-color: #fff;
-  box-shadow: 1px 1px 4px gray;
-  display: block;
+  left: 0;
+  top: 14px;
+  width: 260px;
+  height: 366px;
+  background-color: #90ee90;
+  border-bottom-left-radius: 5px;
 }
 .menu .autor .out {
   display: block;
@@ -670,6 +682,7 @@ body {
   color: #285E82;
   font-size: 13px;
   cursor: pointer;
+  font-family: 'Tahoma Bold', serif;
 }
 .left_block .autor_area .menu_link_autor .link_autor1:hover {
   background-color: orange;
@@ -688,6 +701,7 @@ body {
   color: #285E82;
   font-size: 13px;
   cursor: pointer;
+  font-family: 'Tahoma Bold', serif;
 }
 .left_block .autor_area .menu_link_autor .link_autor2:hover {
   background-color: orange;
@@ -706,6 +720,7 @@ body {
   color: #285E82;
   font-size: 13px;
   cursor: pointer;
+  font-family: 'Tahoma Bold', serif;
 }
 .left_block .autor_area .menu_link_autor .link_autor3:hover {
   background-color: orange;
@@ -724,6 +739,7 @@ body {
   color: #285E82;
   font-size: 13px;
   cursor: pointer;
+  font-family: 'Tahoma Bold', serif;
 }
 .left_block .autor_area .menu_link_autor .link_autor4:hover {
   background-color: orange;
@@ -742,6 +758,7 @@ body {
   color: #285E82;
   font-size: 13px;
   cursor: pointer;
+  font-family: 'Tahoma Bold', serif;
 }
 .left_block .autor_area .menu_link_autor .link_autor5:hover {
   background-color: orange;
@@ -760,6 +777,7 @@ body {
   color: #285E82;
   font-size: 13px;
   cursor: pointer;
+  font-family: 'Tahoma Bold', serif;
 }
 .left_block .autor_area .menu_link_autor .link_autor6:hover {
   background-color: orange;
@@ -778,6 +796,7 @@ body {
   color: #285E82;
   font-size: 13px;
   cursor: pointer;
+  font-family: 'Tahoma Bold', serif;
 }
 .left_block .autor_area .menu_link_autor .link_autor7:hover {
   background-color: orange;
@@ -796,6 +815,7 @@ body {
   color: #285E82;
   font-size: 13px;
   cursor: pointer;
+  font-family: 'Tahoma Bold', serif;
 }
 .left_block .autor_area .menu_link_autor .link_autor8:hover {
   background-color: orange;
@@ -814,6 +834,7 @@ body {
   color: #285E82;
   font-size: 13px;
   cursor: pointer;
+  font-family: 'Tahoma Bold', serif;
 }
 .left_block .autor_area .menu_link_autor .link_autor9:hover {
   background-color: orange;
@@ -832,6 +853,7 @@ body {
   color: #285E82;
   font-size: 13px;
   cursor: pointer;
+  font-family: 'Tahoma Bold', serif;
 }
 .left_block .autor_area .menu_link_autor .link_autor0:hover {
   background-color: orange;
@@ -895,6 +917,7 @@ body {
   height: 20px;
   font-weight: bold;
   font-size: 12px;
+  font-family: 'Tahoma Bold', serif;
 }
 .center_block .text_next a {
   color: #16557C;
@@ -1021,6 +1044,7 @@ body {
   top: 0;
   margin-bottom: 0;
   vertical-align: top;
+  font-family: 'Cuprum Regular', serif;
 }
 .center_block .new_on_site .article1 .text_art p,
 .center_block .new_on_site .article1 .text_art .n {
@@ -1038,6 +1062,7 @@ body {
   margin-bottom: 10px;
   font-weight: bold;
   color: #16557C;
+  font-family: 'Tahoma Bold', serif;
 }
 .center_block .new_on_site .article2 {
   position: absolute;
@@ -1121,6 +1146,7 @@ body {
   top: 0;
   margin-bottom: 0;
   vertical-align: top;
+  font-family: 'Cuprum Regular', serif;
 }
 .center_block .new_on_site .article2 .text_art p,
 .center_block .new_on_site .article2 .text_art .n {
@@ -1138,6 +1164,7 @@ body {
   margin-bottom: 10px;
   font-weight: bold;
   color: #16557C;
+  font-family: 'Tahoma Bold', serif;
 }
 .center_block .new_on_site .article3 {
   position: absolute;
@@ -1221,6 +1248,7 @@ body {
   top: 0;
   margin-bottom: 0;
   vertical-align: top;
+  font-family: 'Cuprum Regular', serif;
 }
 .center_block .new_on_site .article3 .text_art p,
 .center_block .new_on_site .article3 .text_art .n {
@@ -1238,6 +1266,7 @@ body {
   margin-bottom: 10px;
   font-weight: bold;
   color: #16557C;
+  font-family: 'Tahoma Bold', serif;
 }
 .right_block {
   top: 25px;
@@ -1768,6 +1797,7 @@ body {
   height: 20px;
   font-weight: bold;
   font-size: 12px;
+  font-family: 'Tahoma Bold', serif;
 }
 .inform_area .main .last_news .link_all_news a {
   color: #16557C;
@@ -2115,6 +2145,7 @@ body {
   height: 20px;
   font-weight: bold;
   font-size: 12px;
+  font-family: 'Tahoma Bold', serif;
 }
 .inform_area .main .answer_on_qwestion .link_all_question a {
   color: #16557C;

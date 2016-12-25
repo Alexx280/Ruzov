@@ -11,7 +11,7 @@
     font-style: italic;
 }
 @font-face {
-    font-family: 'Cuprum';
+    font-family: 'Cuprum Bold';
     src: local('Cuprum Bold'), local('Cuprum-Bold'), url('http://64424.selcdn.ru/webfonts/cuprum/700.woff2') format('woff2'), url('http://64424.selcdn.ru/webfonts/cuprum/700.woff') format('woff');
     font-weight: 700;
     font-style: normal;
