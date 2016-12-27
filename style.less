@@ -353,8 +353,8 @@ body {
     .out {display: block}
   }
   .spirit_part, .doing_part, .project{
-    padding-left:8px;
-    padding-right: 5px;
+    padding-left:15px;
+    padding-right: 10px;
     .menu_inter{
       position: absolute;
       top: 71px;
@@ -372,19 +372,32 @@ body {
   }
   .project{margin-right: 5px;}
   .find {
+    position: relative;
+    right:-10px;
+    top:0;
     width: 155px;
     height: 26px;
     background-color: #eaecee;
     border: 1px solid gray;
     border-radius: @radius;
     &:hover {background-color: #eaecee;}
+    input {
+      position: relative;
+      top:-7px;
+      left:5px;
+      width:120px;
+      outline: 0 !important;
+      border: none;
+      background-color: #eaecee;
+    }
   }
   .find_button {
     position: absolute;
     margin-top: -1px;
-    right: 7px;
+    right: 0;
     float: right;
     height: 28px;
+    cursor: pointer;
   }
 }
 .head {
@@ -1064,16 +1077,23 @@ body {
         height: 40px;
         width: 320px;
         bottom: 0;
-        p {vertical-align: top;
-        line-height: 7px;
-        margin-left: 15px;
-        color: #CACACA}
+        #sub {
+          position: relative;
+          top:10px;
+          left:10px;
+          width:200px;
+          outline: 0 !important;
+          border: none;
+          color: #CACACA
+          //background-color: #eaecee;
+        }
         .button_subscribe {
           position: absolute;
           right: 5px;
           top: 5px;
           width: 97px;
           height: 32px;
+          cursor: pointer;
           .image('pic/subscribe_button.png', 'pic/subscribe_button_over.png')
         }
       }

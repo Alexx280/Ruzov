@@ -345,7 +345,8 @@ block content
             .subscribe
                 .text ПОДПИШИСЬ НА НАШИ НОВОСТИ:
                 .input_area
-                    p введите ваш e-mail
+                    div
+                        input(id='sub', type='text', placeholder='введите ваш e-mail')
                     .button_subscribe
             .big_links
                 .link4
