@@ -352,8 +352,8 @@ body {
 .menu .spirit_part,
 .menu .doing_part,
 .menu .project {
-  padding-left: 15px;
-  padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 5px;
 }
 .menu .spirit_part .menu_inter,
 .menu .doing_part .menu_inter,
