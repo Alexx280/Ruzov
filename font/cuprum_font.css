@@ -32,5 +32,9 @@
 }
 @font-face {
     font-family: 'Tahoma Bold'; /* Гарнитура шрифта */
-    src: url(cuprum_regular.ttf); /* Путь к файлу со шрифтом */
+    src: url(tahoma_bold.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: 'Tahoma Regular'; /* Гарнитура шрифта */
+    src: url(tahoma_regular.ttf); /* Путь к файлу со шрифтом */
 }

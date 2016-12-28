@@ -160,10 +160,13 @@
     .toptext {
       color: @blue_text;
       font-weight: bold;
+      font-family: 'Tahoma Bold', serif;
     }
     .text {
       font-size: 12px;
+      font-family: 'Tahoma Regular', serif;
     }
+    .link a {font-family: 'Tahoma Regular', serif;}
   }
 }
 .question_answer(@top_qa){
@@ -175,8 +178,22 @@
   line-height: 14px;
   font-size: 13px;
   padding-top: 0;
-  .first {font-weight: bold; color: @blue_text; margin-top: 3px;};
-  .second {margin-top: -10px;}
+  .first {
+    font-weight: bold;
+    color: @blue_text;
+    margin-top: 3px;
+    font-family: 'Tahoma Bold', serif;};
+  .second {
+    font-family: 'Tahoma Regular', serif;
+    margin-top: -10px;
+  }
+  .points {
+    width: 500px;
+    white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем содержимое */
+    padding: 5px; /* Поля */
+    text-overflow: ellipsis; /* Многоточие */
+  }
   .read_all {
     position: absolute;
     right: 0;
@@ -185,6 +202,7 @@
     height: 20px;
     color: @blue_text;
     text-decoration-line: underline;
+    font-family: 'Tahoma Regular', serif;
     cursor: pointer;
     &:hover {color:orange;}
   }
@@ -1041,6 +1059,7 @@ body {
   height: 60px;
   width: 165px;
   vertical-align: top;
+  font-family: 'Tahoma Regular', serif;
   .list_link();
 }
 .links_big {
@@ -1050,6 +1069,7 @@ body {
   margin-left: 10px;
   height: 160px;
   width: 200px;
+  font-family: 'Tahoma Regular', serif;
   .list_link();
 }
 .bottom_links_area {
@@ -1102,8 +1122,8 @@ body {
       position: absolute;
       top: 0 ;
       left: 530px;
-      .link4 {.links_big}
-      .link5 {.links_big}
+      .link4 {.links_big; font-family: 'Cuprum Bold', serif;}
+      .link5 {.links_big; font-family: 'Cuprum Bold', serif;}
     }
   }
 }
@@ -1141,5 +1161,7 @@ body {
     right: 0;
     width: 150px;
     height: 65px;
+    //font-family: 'Tahoma Regular', serif;
+    //font-size: 12px;
   }
 }

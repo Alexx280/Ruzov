@@ -1982,9 +1982,14 @@ body {
 .inform_area .main .last_news .all_news .news1 .text_art .toptext {
   color: #16557C;
   font-weight: bold;
+  font-family: 'Tahoma Bold', serif;
 }
 .inform_area .main .last_news .all_news .news1 .text_art .text {
   font-size: 12px;
+  font-family: 'Tahoma Regular', serif;
+}
+.inform_area .main .last_news .all_news .news1 .text_art .link a {
+  font-family: 'Tahoma Regular', serif;
 }
 .inform_area .main .last_news .all_news .news2 {
   position: relative;
@@ -2043,9 +2048,14 @@ body {
 .inform_area .main .last_news .all_news .news2 .text_art .toptext {
   color: #16557C;
   font-weight: bold;
+  font-family: 'Tahoma Bold', serif;
 }
 .inform_area .main .last_news .all_news .news2 .text_art .text {
   font-size: 12px;
+  font-family: 'Tahoma Regular', serif;
+}
+.inform_area .main .last_news .all_news .news2 .text_art .link a {
+  font-family: 'Tahoma Regular', serif;
 }
 .inform_area .main .last_news .all_news .news3 {
   position: relative;
@@ -2104,9 +2114,14 @@ body {
 .inform_area .main .last_news .all_news .news3 .text_art .toptext {
   color: #16557C;
   font-weight: bold;
+  font-family: 'Tahoma Bold', serif;
 }
 .inform_area .main .last_news .all_news .news3 .text_art .text {
   font-size: 12px;
+  font-family: 'Tahoma Regular', serif;
+}
+.inform_area .main .last_news .all_news .news3 .text_art .link a {
+  font-family: 'Tahoma Regular', serif;
 }
 .inform_area .main .last_news .all_news .news4 {
   position: relative;
@@ -2165,9 +2180,14 @@ body {
 .inform_area .main .last_news .all_news .news4 .text_art .toptext {
   color: #16557C;
   font-weight: bold;
+  font-family: 'Tahoma Bold', serif;
 }
 .inform_area .main .last_news .all_news .news4 .text_art .text {
   font-size: 12px;
+  font-family: 'Tahoma Regular', serif;
+}
+.inform_area .main .last_news .all_news .news4 .text_art .link a {
+  font-family: 'Tahoma Regular', serif;
 }
 .inform_area .main .last_news .all_news .news5 {
   position: relative;
@@ -2226,9 +2246,14 @@ body {
 .inform_area .main .last_news .all_news .news5 .text_art .toptext {
   color: #16557C;
   font-weight: bold;
+  font-family: 'Tahoma Bold', serif;
 }
 .inform_area .main .last_news .all_news .news5 .text_art .text {
   font-size: 12px;
+  font-family: 'Tahoma Regular', serif;
+}
+.inform_area .main .last_news .all_news .news5 .text_art .link a {
+  font-family: 'Tahoma Regular', serif;
 }
 .inform_area .main .answer_on_qwestion {
   position: absolute;
@@ -2288,8 +2313,10 @@ body {
   font-weight: bold;
   color: #16557C;
   margin-top: 3px;
+  font-family: 'Tahoma Bold', serif;
 }
 .inform_area .main .answer_on_qwestion .question_answer1 .second {
+  font-family: 'Tahoma Regular', serif;
   margin-top: -10px;
 }
 .inform_area .main .answer_on_qwestion .question_answer1 .read_all {
@@ -2300,6 +2327,7 @@ body {
   height: 20px;
   color: #16557C;
   text-decoration-line: underline;
+  font-family: 'Tahoma Regular', serif;
   cursor: pointer;
 }
 .inform_area .main .answer_on_qwestion .question_answer1 .read_all:hover {
@@ -2319,8 +2347,10 @@ body {
   font-weight: bold;
   color: #16557C;
   margin-top: 3px;
+  font-family: 'Tahoma Bold', serif;
 }
 .inform_area .main .answer_on_qwestion .question_answer2 .second {
+  font-family: 'Tahoma Regular', serif;
   margin-top: -10px;
 }
 .inform_area .main .answer_on_qwestion .question_answer2 .read_all {
@@ -2331,6 +2361,7 @@ body {
   height: 20px;
   color: #16557C;
   text-decoration-line: underline;
+  font-family: 'Tahoma Regular', serif;
   cursor: pointer;
 }
 .inform_area .main .answer_on_qwestion .question_answer2 .read_all:hover {
@@ -2380,6 +2411,7 @@ body {
   height: 60px;
   width: 165px;
   vertical-align: top;
+  font-family: 'Tahoma Regular', serif;
 }
 .links p {
   line-height: 8px;
@@ -2404,6 +2436,7 @@ body {
   margin-left: 10px;
   height: 160px;
   width: 200px;
+  font-family: 'Tahoma Regular', serif;
 }
 .links_big p {
   line-height: 8px;
@@ -2649,6 +2682,7 @@ body {
   height: 60px;
   width: 165px;
   vertical-align: top;
+  font-family: 'Tahoma Regular', serif;
 }
 .bottom_links_area .main .all_links .link1 p {
   line-height: 8px;
@@ -2674,6 +2708,7 @@ body {
   height: 60px;
   width: 165px;
   vertical-align: top;
+  font-family: 'Tahoma Regular', serif;
 }
 .bottom_links_area .main .all_links .link2 p {
   line-height: 8px;
@@ -2699,6 +2734,7 @@ body {
   height: 60px;
   width: 165px;
   vertical-align: top;
+  font-family: 'Tahoma Regular', serif;
 }
 .bottom_links_area .main .all_links .link3 p {
   line-height: 8px;
@@ -2726,6 +2762,7 @@ body {
 .bottom_links_area .main .subscribe .text {
   color: white;
   font-size: 13px;
+  font-family: 'Cuprum Bold', serif;
 }
 .bottom_links_area .main .subscribe .input_area {
   position: absolute;
@@ -2769,6 +2806,8 @@ body {
   margin-left: 10px;
   height: 160px;
   width: 200px;
+  font-family: 'Tahoma Regular', serif;
+  font-family: 'Cuprum Bold', serif;
 }
 .bottom_links_area .main .big_links .link4 p {
   line-height: 8px;
@@ -2793,6 +2832,8 @@ body {
   margin-left: 10px;
   height: 160px;
   width: 200px;
+  font-family: 'Tahoma Regular', serif;
+  font-family: 'Cuprum Bold', serif;
 }
 .bottom_links_area .main .big_links .link5 p {
   line-height: 8px;
