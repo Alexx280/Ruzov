@@ -384,7 +384,7 @@ body {
 }
 .menu .find {
   position: relative;
-  right: -10px;
+  right: -40px;
   top: 0;
   width: 155px;
   height: 26px;
@@ -1495,6 +1495,7 @@ body {
   height: 273px;
   width: 640px;
   padding-left: 5px;
+  z-index: 3;
 }
 .schedule_area .main .fon_slider_schedule .img_schedule_slider .monitor2 {
   width: 630px;
@@ -1529,7 +1530,7 @@ body {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   cursor: pointer;
-  z-index: 6;
+  z-index: 4;
   vertical-align: top;
 }
 .schedule_area .main .fon_slider_schedule .img_schedule_slider .schedule_button:hover {
@@ -2561,6 +2562,7 @@ body {
   height: 273px;
   width: 640px;
   padding-left: 5px;
+  z-index: 3;
 }
 .bottom_links_area .main .fon_slider_schedule .img_schedule_slider .monitor2 {
   width: 630px;
@@ -2595,7 +2597,7 @@ body {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   cursor: pointer;
-  z-index: 6;
+  z-index: 4;
   vertical-align: top;
 }
 .bottom_links_area .main .fon_slider_schedule .img_schedule_slider .schedule_button:hover {
