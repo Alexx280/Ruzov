@@ -1,4 +1,6 @@
 @import 'font/cuprum_font.css';
+@import 'Tamplate/mixin';
+@import 'Tamplate/adaptive840';
 
 @height_area: 625px;
 @top_area: 25px;
@@ -7,234 +9,7 @@
 @icon: 30px;
 @autor_link: 25px;
 @blue_text: #16557C;
-.shadow(){
-  box-shadow: 0 0 3px gray;}
 
-.icon(@top, @left, @src){
-  position: absolute;
-  top: @top;
-  left:@left;
-  height: 30px;
-  width: 30px;
-  background: url(@src);
-  background-repeat: space;
-}
-.head_text(@top, @left) {
-  position: absolute;
-  top:@top;
-  left:@left;
-  width: 400px;
-  height: 50px;
-  font-family: 'Cuprum', serif;
-  font-size: 25px;
-}
-.link_next(@top, @wid, @rig) {
-  position: absolute;
-  top: @top;
-  right: @rig;
-  width: @wid;
-  height: 20px;
-  font-weight: bold;
-  font-size: 12px;
-  font-family: 'Tahoma Bold', serif;
-  a {color: @blue_text;
-    &:hover {
-      color: orange;
-    }
-  }
-}
-.chapter {
-  position: relative;
-  display: inline-block;
-  width: 332px;
-  height: 200px;
-  margin-left: 15px;
-  top: 25px;
-  .line1 {
-    position: absolute;
-    top: 10px;
-    width:70px;
-    border-top:1px solid gray;
-  }
-  .head_line{
-    position: absolute;
-    top:0;
-    left: 95px;
-    font-family: 'Cuprum', serif;
-    color: #484848;
-  }
-  .line2{
-    .line1();
-    right: 0;
-  }
-  .links1 {
-    position: absolute;
-    display: inline-block;
-    top: 15px;
-    font-size: 0.8em;
-    line-height: 10px;
-    width: 145px;
-    color: @blue_text;
-    .lin {
-      float: right;
-      margin-top: 15px;
-      &:hover {
-        color: orange;
-        text-decoration-line: underline;
-        cursor: pointer;
-        font-weight: bold;
-      }
-    }
-  }
-  .count1 {
-    .links1();
-    right:170px;
-    width:10px;
-    .co {
-      color: orange;
-      font-weight: bold;
-      margin-top: 15px;
-      width:10px;
-      height: 10px;
-      display: block;
-    }
-  }
-  .links2 {
-    .links1();
-    right: 15px;
-  }
-  .count2 {
-    .count1();
-    right:0;
-  }
-}
-.news(@pic) {
-  position: relative;
-  display: inline-block;
-  top:45px;
-  margin-left:8px;
-  height: 275px;
-  width: 180px;
-  vertical-align:top;
-  &:hover {
-    .fon .image_art_shadow {opacity: 0;};
-    .text_art .toptext, .text_art .link a{color: orange}
-  }
-  .fon {
-    background-color: white;
-    border-radius: @radius;
-    width: 180px;
-    height: 110px;
-    .img_news {
-      position: relative;
-      top: 6px;
-      left: 6px;
-      width: 165px;
-      height: 97px;
-      background-image: url(@pic);
-    }
-    .image_art_shadow {
-      position: absolute;
-      top:6px;
-      left:6px;
-      width: 166px;
-      height: 97px;
-      background-color: gray;
-      opacity: 0.5;
-    }
-    .img_pointer {
-      position: absolute;
-      top:0;
-      left:0;
-      width: 180px;
-      height: 110px;
-      border-radius: @radius;
-      z-index: 10;
-      cursor: pointer;
-    }
-  }
-  .text_art {
-    font-size: 0.8em;
-    vertical-align:top;
-    cursor: pointer;
-    .toptext {
-      color: @blue_text;
-      font-weight: bold;
-      font-family: 'Tahoma Bold', serif;
-    }
-    .text {
-      font-size: 12px;
-      font-family: 'Tahoma Regular', serif;
-    }
-    .link a {font-family: 'Tahoma Regular', serif;}
-  }
-}
-.question_answer(@top_qa){
-  position: relative;
-  width:650px;
-  height:110px;
-  left:20px;
-  top:@top_qa;
-  line-height: 14px;
-  font-size: 13px;
-  padding-top: 0;
-  .first {
-    font-weight: bold;
-    color: @blue_text;
-    margin-top: 3px;
-    font-family: 'Tahoma Bold', serif;};
-  .second {
-    font-family: 'Tahoma Regular', serif;
-    margin-top: -10px;
-  }
-  .points {
-    width: 500px;
-    white-space: nowrap; /* Отменяем перенос текста */
-    overflow: hidden; /* Обрезаем содержимое */
-    padding: 5px; /* Поля */
-    text-overflow: ellipsis; /* Многоточие */
-  }
-  .read_all {
-    position: absolute;
-    right: 0;
-    bottom: 15px;
-    width: 105px;
-    height: 20px;
-    color: @blue_text;
-    text-decoration-line: underline;
-    font-family: 'Tahoma Regular', serif;
-    cursor: pointer;
-    &:hover {color:orange;}
-  }
-}
-.image(@a, @b){
-  background-image: url(@a);
-  &:hover {background-image: url(@b)};
-  background-repeat: no-repeat;
-}
-
-/*.menu_inter0(@z: 'none'){
-  position: absolute;
-  top: 71px;
-  left: 258px;
-  width: 702px;
-  height: 380px;
-  z-index: 10;
-  border-radius: @radius;
-  background-color: #fff;
-  box-shadow: 1px 1px 4px gray;
-  display: @z;
-  .inter_top {
-    position: relative;
-    top: -15px;
-    left: 0;
-    width: 100%;
-    height: 15px;
-    background-color: #8DA1B3;
-    border-top-right-radius: @radius;
-    border-top-left-radius: @radius;
-  }
-}*/
 
 body {
   background-color: #eaecee;
@@ -266,6 +41,7 @@ body {
     height: 23px;
     position: relative;
     margin-top: @b;
+    cursor: pointer;
   }
   .net1 {.net('pic/net_1.png', 0)}
   .net2 {.net('pic/net_2.png')}
@@ -279,32 +55,7 @@ body {
   width: auto;
   margin-top: 10px;
 }
-.menu_adaptive {
-  position: absolute;
-  top:0;
-  left: 750px;
-  display: none;
-  width:  125px;
-  height: 37px;
-  background-color: white;
-  border-radius: @radius;
-  float: right;
-  margin-top: 25px;
-  box-shadow: 1px 1px 4px gray;
-  vertical-align: middle;
-  padding-top: 8px;
-  padding-left: 30px;
-  font-family: 'Cuprum Bold', serif;
-  font-size: 25px;
-  @media screen and (max-width: 841px) {
-    display: block;
-  }
-  img{
-    position: absolute;
-    top: 10px;
-    right: 15px;
-  }
-}
+
 .menu {
   width:  695px;
   height: 45px;
@@ -326,6 +77,7 @@ body {
     display: inline-block;
     vertical-align: middle;
     line-height: 40px;
+    cursor: pointer;
     &:hover {background-color: #8DA1B3; color:#fff;}
     div {margin-right: 10px; height: 96%};
     //font-family: 'Cuprum', serif;
@@ -423,6 +175,7 @@ body {
   position: relative;
   top: 10px;
   height: 340px;
+
   width: 960px;
   border-radius: @radius;
   .shadow;
@@ -431,6 +184,9 @@ body {
     top:9px;
     margin-left: 9px;
     width:942px;
+    @media screen and (max-width: 840px) {
+      width: 840px;
+    }
     height:322px;
     overflow:hidden;
     .small_view(@pic, @topp:10px){

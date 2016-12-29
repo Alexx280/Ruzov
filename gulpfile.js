@@ -24,7 +24,7 @@ gulp.task('scripts', function(){
         .pipe(uglify())
         .pipe(gulp.dest('js'))
 });
-gulp.task('css-libs', ['sass', 'less'], function(){
+gulp.task('css-libs', ['less'], function(){
     return gulp.src('style.css')
         .pipe(cssnano())
         .pipe(rename({suffix: '.min'}))
@@ -34,9 +34,9 @@ gulp.task('less', function(){
     return gulp.src('*.less')
         .pipe(less())
         .pipe(gulp.dest(''))
-        .pipe(browserSync.reload({
+        /*.pipe(browserSync.reload({
             stream:true
-        }))
+        }))*/
 });
 
 gulp.task('browserSync', function(){
@@ -48,10 +48,19 @@ gulp.task('browserSync', function(){
     })
 });
 
-gulp.task('watch', ['browserSync', 'css-libs', 'scripts'],function(){
-    gulp.watch('app/sass/**/*.sass', ['sass'])
-    gulp.watch('*.less', browserSync.reload)
+//gulp.task('watch', ['browserSync', 'css-libs', 'scripts'],function(){
+  //  gulp.watch('app/sass/**/*.sass', ['sass'])
+  //  gulp.watch('*.less', browserSync.reload)
     //gulp.watch('*.less', ['less'], browserSync.reload)
-    gulp.watch('*.html', browserSync.reload)
-    gulp.watch('js/**/*.js', browserSync.reload)
+  //  gulp.watch('*.html', browserSync.reload)
+  //  gulp.watch('js/**/*.js', browserSync.reload)
+//});
+gulp.task('watch', ['css-libs', 'scripts'],function(){
+    //gulp.watch('app/sass/**/*.sass', ['sass'])
+    //gulp.watch('*.less')
+    gulp.watch('*.less', ['less'])
+    gulp.watch('Tamplate/*.less', ['less'])
+    gulp.watch('*.css', ['css-libs'])
+    gulp.watch('*.html')
+    gulp.watch('js/**/*.js', ['scripts'])
 });

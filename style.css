@@ -147,6 +147,65 @@
     border-top-left-radius: @radius;
   }
 }*/
+.menu_adaptive {
+  position: absolute;
+  top: 0;
+  left: 750px;
+  display: none;
+  width: 125px;
+  height: 37px;
+  background-color: white;
+  border-radius: 5px;
+  float: right;
+  margin-top: 25px;
+  box-shadow: 1px 1px 4px gray;
+  vertical-align: middle;
+  padding-top: 8px;
+  padding-left: 30px;
+  font-family: 'Cuprum Bold', serif;
+  font-size: 25px;
+}
+@media screen and (max-width: 841px) {
+  .menu_adaptive {
+    display: block;
+  }
+}
+.menu_adaptive img {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.find_adaptive {
+  display: none;
+}
+@media screen and (max-width: 841px) {
+  .find_adaptive {
+    display: block;
+    position: absolute;
+    right: 250px;
+    top: 35px;
+    width: 245px;
+    height: 30px;
+    background-color: #eaecee;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  .find_adaptive:hover {
+    background-color: #eaecee;
+  }
+  .find_adaptive input {
+    position: relative;
+    top: 5px;
+    left: 8px;
+    width: 120px;
+    outline: 0 !important;
+    border: none;
+    background-color: #eaecee;
+  }
+  .find_adaptive img {
+    float: right;
+  }
+}
 body {
   background-color: #eaecee;
   margin: 0;
@@ -178,6 +237,7 @@ body {
   height: 23px;
   position: relative;
   margin-top: 0;
+  cursor: pointer;
 }
 .social_net .net1:hover {
   opacity: 0.5;
@@ -190,6 +250,7 @@ body {
   height: 23px;
   position: relative;
   margin-top: 5px;
+  cursor: pointer;
 }
 .social_net .net2:hover {
   opacity: 0.5;
@@ -202,6 +263,7 @@ body {
   height: 23px;
   position: relative;
   margin-top: 5px;
+  cursor: pointer;
 }
 .social_net .net3:hover {
   opacity: 0.5;
@@ -214,6 +276,7 @@ body {
   height: 23px;
   position: relative;
   margin-top: 5px;
+  cursor: pointer;
 }
 .social_net .net4:hover {
   opacity: 0.5;
@@ -226,6 +289,7 @@ body {
   height: 23px;
   position: relative;
   margin-top: 5px;
+  cursor: pointer;
 }
 .social_net .net5:hover {
   opacity: 0.5;
@@ -238,6 +302,7 @@ body {
   height: 23px;
   position: relative;
   margin-top: 5px;
+  cursor: pointer;
 }
 .social_net .net6:hover {
   opacity: 0.5;
@@ -246,34 +311,6 @@ body {
   height: 75px;
   width: auto;
   margin-top: 10px;
-}
-.menu_adaptive {
-  position: absolute;
-  top: 0;
-  left: 750px;
-  display: none;
-  width: 125px;
-  height: 37px;
-  background-color: white;
-  border-radius: 5px;
-  float: right;
-  margin-top: 25px;
-  box-shadow: 1px 1px 4px gray;
-  vertical-align: middle;
-  padding-top: 8px;
-  padding-left: 30px;
-  font-family: 'Cuprum Bold', serif;
-  font-size: 25px;
-}
-@media screen and (max-width: 841px) {
-  .menu_adaptive {
-    display: block;
-  }
-}
-.menu_adaptive img {
-  position: absolute;
-  top: 10px;
-  right: 15px;
 }
 .menu {
   width: 695px;
@@ -299,6 +336,7 @@ body {
   display: inline-block;
   vertical-align: middle;
   line-height: 40px;
+  cursor: pointer;
   font-family: 'Cuprum Regular', serif;
 }
 .menu div:hover {
@@ -428,6 +466,11 @@ body {
   width: 942px;
   height: 322px;
   overflow: hidden;
+}
+@media screen and (max-width: 840px) {
+  .head .slider-box {
+    width: 840px;
+  }
 }
 .head .slider-box .small_view1 {
   position: absolute;
