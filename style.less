@@ -178,9 +178,11 @@ body {
   position: relative;
   top: 10px;
   height: 340px;
-
   width: 960px;
   border-radius: @radius;
+  @media screen and (max-width: 840px) {
+    width: 840px;
+  }
   .shadow;
   .slider-box{
     position:relative;
@@ -189,6 +191,7 @@ body {
     width:942px;
     @media screen and (max-width: 840px) {
       width: 840px;
+      margin-left: 0;
     }
     height:322px;
     overflow:hidden;
@@ -363,8 +366,28 @@ body {
     width: @width_area;
     border-radius: @radius;
     cursor: pointer;
+    display: block;
     .shadow;
     background-image: url('pic/dobro_shop.png');
+    @media screen and (max-width: 840px) {
+      display: none;
+    }
+
+  }
+  .video_area840 {
+    display: none;
+    @media screen and (max-width: 840px) {
+      display: block;
+      background-color: #233048;
+      position: inherit;
+      float: right;
+      height: 220px;
+      width: @width_area - 20px;
+      border-radius: @radius;
+      .shadow;
+      padding: 10px;
+      top:20px;
+    }
   }
 }
 .center_block {
@@ -375,6 +398,10 @@ body {
   width: @width_area*2;
   margin-left: -4px;
   margin-right: -4px;
+  @media screen and (max-width: 840px) {
+    width: 560px;
+  }
+
   .icon_seminar {
     .icon (10px; 25px; 'pic/Seminar.png');
   }
@@ -382,7 +409,7 @@ body {
     .head_text(10px; 55px;)
   }
   .text_next {
-    .link_next(15px, 100px, 15px)
+    .link_next(15px, 100px, -20px)
   }
   .date_seminars {
     position: absolute;
@@ -402,6 +429,9 @@ body {
     left: 20px;
     width: 440px;
     border-top: 2px solid lightgray;
+    @media screen and (max-width: 840px) {
+      width: 570px;
+    }
     .new_icon {
       .icon(35px, 0, 'pic/new.png')
     }
@@ -414,6 +444,9 @@ body {
       width: 415px;
       left: 0;
       top: @top_art;
+      @media screen and (max-width: 840px) {
+        width: 600px;
+      }
       &:hover {
         .text_art .hight_text{color: orange;};
         .image_art_shadow {opacity: 0;}
@@ -444,7 +477,6 @@ body {
             font-size: 0.8em;
             z-index: 10;
           }
-
       };
       .image_art_shadow {
         position: absolute;
@@ -487,6 +519,9 @@ body {
         margin-bottom: 0;
         vertical-align:top;
         font-family: 'Cuprum Regular', serif;
+        @media screen and (max-width: 840px) {
+          width: 400px;
+        }
         p, .n{
           line-height: 1em;
           font-size: 0.8em;
@@ -527,6 +562,10 @@ body {
     border-radius: @radius;
     .shadow;
     padding: 10px;
+    @media screen and (max-width: 840px) {
+      display: none;
+    }
+
   }
   .chanal_area {
     background-image: url('pic/our_channal.png');
@@ -536,6 +575,10 @@ body {
     float: right;
     height: 400px;
     width: @width_area;
+    @media screen and (max-width: 840px) {
+      display: none;
+    }
+
   }
 }
 .schedule_area {
@@ -569,6 +612,10 @@ body {
       cursor: pointer;
       .image('pic/arrow_left_schedule.png','pic/arrow_left_schedule_over.png');
       &:hover {bottom: 63px;left: 0;}
+      @media screen and (max-width: 840px) {
+        left: 67px;
+      }
+
     }
     .arrow_right {
       position: absolute;
@@ -579,6 +626,10 @@ body {
       cursor: pointer;
       .image('pic/arrow_right_schedule.png','pic/arrow_right_schedule_over.png');
       &:hover {bottom: 63px;left: 693px;}
+      @media screen and (max-width: 840px) {
+        left: 760px;
+      }
+
     }
     .fon_slider_schedule {
       position: absolute;
@@ -588,6 +639,9 @@ body {
       background-color: #4F6070;
       height: 365px;
       width: 650px;
+      @media screen and (max-width: 840px) {
+        left: 95px;
+      }
       .img_schedule_slider {
         position: relative;
         top: 5px;
@@ -666,6 +720,9 @@ body {
       right: 0;
       width: 250px;
       height: 300px;
+      @media screen and (max-width: 840px) {
+        display: none;
+      }
       .head_shop_buy {
         position: absolute;
         top: 20px;

@@ -588,6 +588,11 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 3px gray;
 }
+@media screen and (max-width: 840px) {
+  .head {
+    width: 840px;
+  }
+}
 .head .slider-box {
   position: relative;
   top: 9px;
@@ -599,6 +604,7 @@ body {
 @media screen and (max-width: 840px) {
   .head .slider-box {
     width: 840px;
+    margin-left: 0;
   }
 }
 .head .slider-box .small_view1 {
@@ -1171,8 +1177,31 @@ body {
   width: 240px;
   border-radius: 5px;
   cursor: pointer;
+  display: block;
   box-shadow: 0 0 3px gray;
   background-image: url('pic/dobro_shop.png');
+}
+@media screen and (max-width: 840px) {
+  .left_block .shop_area {
+    display: none;
+  }
+}
+.left_block .video_area840 {
+  display: none;
+}
+@media screen and (max-width: 840px) {
+  .left_block .video_area840 {
+    display: block;
+    background-color: #233048;
+    position: inherit;
+    float: right;
+    height: 220px;
+    width: 220px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px gray;
+    padding: 10px;
+    top: 20px;
+  }
 }
 .center_block {
   position: inherit;
@@ -1182,6 +1211,11 @@ body {
   width: 480px;
   margin-left: -4px;
   margin-right: -4px;
+}
+@media screen and (max-width: 840px) {
+  .center_block {
+    width: 560px;
+  }
 }
 .center_block .icon_seminar {
   position: absolute;
@@ -1204,7 +1238,7 @@ body {
 .center_block .text_next {
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: -20px;
   width: 100px;
   height: 20px;
   font-weight: bold;
@@ -1236,6 +1270,11 @@ body {
   width: 440px;
   border-top: 2px solid lightgray;
 }
+@media screen and (max-width: 840px) {
+  .center_block .new_on_site {
+    width: 570px;
+  }
+}
 .center_block .new_on_site .new_icon {
   position: absolute;
   top: 35px;
@@ -1260,6 +1299,11 @@ body {
   width: 415px;
   left: 0;
   top: 35px;
+}
+@media screen and (max-width: 840px) {
+  .center_block .new_on_site .article1 {
+    width: 600px;
+  }
 }
 .center_block .new_on_site .article1:hover .text_art .hight_text {
   color: orange;
@@ -1338,6 +1382,11 @@ body {
   vertical-align: top;
   font-family: 'Cuprum Regular', serif;
 }
+@media screen and (max-width: 840px) {
+  .center_block .new_on_site .article1 .text_art {
+    width: 400px;
+  }
+}
 .center_block .new_on_site .article1 .text_art p,
 .center_block .new_on_site .article1 .text_art .n {
   line-height: 1em;
@@ -1362,6 +1411,11 @@ body {
   width: 415px;
   left: 0;
   top: 175px;
+}
+@media screen and (max-width: 840px) {
+  .center_block .new_on_site .article2 {
+    width: 600px;
+  }
 }
 .center_block .new_on_site .article2:hover .text_art .hight_text {
   color: orange;
@@ -1440,6 +1494,11 @@ body {
   vertical-align: top;
   font-family: 'Cuprum Regular', serif;
 }
+@media screen and (max-width: 840px) {
+  .center_block .new_on_site .article2 .text_art {
+    width: 400px;
+  }
+}
 .center_block .new_on_site .article2 .text_art p,
 .center_block .new_on_site .article2 .text_art .n {
   line-height: 1em;
@@ -1464,6 +1523,11 @@ body {
   width: 415px;
   left: 0;
   top: 315px;
+}
+@media screen and (max-width: 840px) {
+  .center_block .new_on_site .article3 {
+    width: 600px;
+  }
 }
 .center_block .new_on_site .article3:hover .text_art .hight_text {
   color: orange;
@@ -1542,6 +1606,11 @@ body {
   vertical-align: top;
   font-family: 'Cuprum Regular', serif;
 }
+@media screen and (max-width: 840px) {
+  .center_block .new_on_site .article3 .text_art {
+    width: 400px;
+  }
+}
 .center_block .new_on_site .article3 .text_art p,
 .center_block .new_on_site .article3 .text_art .n {
   line-height: 1em;
@@ -1578,6 +1647,11 @@ body {
   box-shadow: 0 0 3px gray;
   padding: 10px;
 }
+@media screen and (max-width: 840px) {
+  .right_block .video_area {
+    display: none;
+  }
+}
 .right_block .chanal_area {
   background-image: url('pic/our_channal.png');
   position: inherit;
@@ -1586,6 +1660,11 @@ body {
   float: right;
   height: 400px;
   width: 240px;
+}
+@media screen and (max-width: 840px) {
+  .right_block .chanal_area {
+    display: none;
+  }
 }
 .schedule_area {
   background-color: #768C9F;
@@ -1634,6 +1713,11 @@ body {
   bottom: 63px;
   left: 0;
 }
+@media screen and (max-width: 840px) {
+  .schedule_area .main .arrow_left {
+    left: 67px;
+  }
+}
 .schedule_area .main .arrow_right {
   position: absolute;
   left: 695px;
@@ -1651,6 +1735,11 @@ body {
   bottom: 63px;
   left: 693px;
 }
+@media screen and (max-width: 840px) {
+  .schedule_area .main .arrow_right {
+    left: 760px;
+  }
+}
 .schedule_area .main .fon_slider_schedule {
   position: absolute;
   top: 60px;
@@ -1659,6 +1748,11 @@ body {
   background-color: #4F6070;
   height: 365px;
   width: 650px;
+}
+@media screen and (max-width: 840px) {
+  .schedule_area .main .fon_slider_schedule {
+    left: 95px;
+  }
 }
 .schedule_area .main .fon_slider_schedule .img_schedule_slider {
   position: relative;
@@ -1739,6 +1833,11 @@ body {
   right: 0;
   width: 250px;
   height: 300px;
+}
+@media screen and (max-width: 840px) {
+  .schedule_area .main .shop_buy {
+    display: none;
+  }
 }
 .schedule_area .main .shop_buy .head_shop_buy {
   position: absolute;
@@ -2701,6 +2800,11 @@ body {
   bottom: 63px;
   left: 0;
 }
+@media screen and (max-width: 840px) {
+  .bottom_links_area .main .arrow_left {
+    left: 67px;
+  }
+}
 .bottom_links_area .main .arrow_right {
   position: absolute;
   left: 695px;
@@ -2718,6 +2822,11 @@ body {
   bottom: 63px;
   left: 693px;
 }
+@media screen and (max-width: 840px) {
+  .bottom_links_area .main .arrow_right {
+    left: 760px;
+  }
+}
 .bottom_links_area .main .fon_slider_schedule {
   position: absolute;
   top: 60px;
@@ -2726,6 +2835,11 @@ body {
   background-color: #4F6070;
   height: 365px;
   width: 650px;
+}
+@media screen and (max-width: 840px) {
+  .bottom_links_area .main .fon_slider_schedule {
+    left: 95px;
+  }
 }
 .bottom_links_area .main .fon_slider_schedule .img_schedule_slider {
   position: relative;
@@ -2806,6 +2920,11 @@ body {
   right: 0;
   width: 250px;
   height: 300px;
+}
+@media screen and (max-width: 840px) {
+  .bottom_links_area .main .shop_buy {
+    display: none;
+  }
 }
 .bottom_links_area .main .shop_buy .head_shop_buy {
   position: absolute;
