@@ -166,7 +166,7 @@
   font-size: 25px;
   cursor: pointer;
 }
-@media screen and (max-width: 841px) {
+@media screen and (max-width: 840px) {
   .menu_adaptive {
     display: block;
   }
@@ -179,7 +179,7 @@
 .wrap_find_adaptive {
   display: none;
 }
-@media screen and (max-width: 841px) {
+@media screen and (max-width: 840px) {
   .wrap_find_adaptive {
     display: block;
     position: absolute;
@@ -195,7 +195,7 @@
 .find_adaptive {
   display: none;
 }
-@media screen and (max-width: 841px) {
+@media screen and (max-width: 840px) {
   .find_adaptive {
     display: block;
     position: absolute;
@@ -345,7 +345,7 @@ body {
 .social_net {
   position: absolute;
   top: 270px;
-  left: 1150px;
+  left: 95%;
   background-color: white;
   width: 25px;
   height: 165px;
@@ -356,6 +356,11 @@ body {
 @media screen and (max-width: 840px) {
   .social_net {
     display: none;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .social_net {
+    left: 1025px;
   }
 }
 .social_net .net1 {
@@ -1684,6 +1689,11 @@ body {
   font-size: 25px;
   color: white;
 }
+@media screen and (max-width: 840px) {
+  .schedule_area .main .text_schedule {
+    left: 100px;
+  }
+}
 .schedule_area .main .link_contact {
   position: absolute;
   top: 20px;
@@ -1692,6 +1702,11 @@ body {
   height: 20px;
   font-weight: bold;
   font-size: 13px;
+}
+@media screen and (max-width: 840px) {
+  .schedule_area .main .link_contact {
+    left: 600px;
+  }
 }
 .schedule_area .main .link_contact a {
   color: #ffffff;
@@ -1714,6 +1729,11 @@ body {
   left: 0;
 }
 @media screen and (max-width: 840px) {
+  .schedule_area .main .arrow_left:hover {
+    left: 65px;
+  }
+}
+@media screen and (max-width: 840px) {
   .schedule_area .main .arrow_left {
     left: 67px;
   }
@@ -1734,6 +1754,11 @@ body {
 .schedule_area .main .arrow_right:hover {
   bottom: 63px;
   left: 693px;
+}
+@media screen and (max-width: 840px) {
+  .schedule_area .main .arrow_right:hover {
+    left: 758px;
+  }
 }
 @media screen and (max-width: 840px) {
   .schedule_area .main .arrow_right {
@@ -2771,6 +2796,11 @@ body {
   font-size: 25px;
   color: white;
 }
+@media screen and (max-width: 840px) {
+  .bottom_links_area .main .text_schedule {
+    left: 100px;
+  }
+}
 .bottom_links_area .main .link_contact {
   position: absolute;
   top: 20px;
@@ -2779,6 +2809,11 @@ body {
   height: 20px;
   font-weight: bold;
   font-size: 13px;
+}
+@media screen and (max-width: 840px) {
+  .bottom_links_area .main .link_contact {
+    left: 600px;
+  }
 }
 .bottom_links_area .main .link_contact a {
   color: #ffffff;
@@ -2801,6 +2836,11 @@ body {
   left: 0;
 }
 @media screen and (max-width: 840px) {
+  .bottom_links_area .main .arrow_left:hover {
+    left: 65px;
+  }
+}
+@media screen and (max-width: 840px) {
   .bottom_links_area .main .arrow_left {
     left: 67px;
   }
@@ -2821,6 +2861,11 @@ body {
 .bottom_links_area .main .arrow_right:hover {
   bottom: 63px;
   left: 693px;
+}
+@media screen and (max-width: 840px) {
+  .bottom_links_area .main .arrow_right:hover {
+    left: 758px;
+  }
 }
 @media screen and (max-width: 840px) {
   .bottom_links_area .main .arrow_right {

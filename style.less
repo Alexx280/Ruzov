@@ -26,9 +26,12 @@ body {
   @media screen and (max-width: 840px) {
     display: none;
   }
+  @media screen and (max-width: 1080px) {
+    left: 1025px;
+  }
   position: absolute;
   top: 270px;
-  left: 1150px;
+  left: 95%;
   background-color: white;
   width: 25px;
   height: 165px;
@@ -591,6 +594,9 @@ body {
     .text_schedule {
       .head_text(15px; 10px;);
       color: white;
+      @media screen and (max-width: 840px) {
+        left: 100px;
+      }
     }
     .link_contact {
       position: absolute;
@@ -600,6 +606,9 @@ body {
       height: 20px;
       font-weight: bold;
       font-size: 13px;
+      @media screen and (max-width: 840px) {
+        left: 600px;
+      }
       a {color: #ffffff;
       }
     }
@@ -611,10 +620,10 @@ body {
       height: 23px;
       cursor: pointer;
       .image('pic/arrow_left_schedule.png','pic/arrow_left_schedule_over.png');
-      &:hover {bottom: 63px;left: 0;}
-      @media screen and (max-width: 840px) {
-        left: 67px;
+      &:hover {bottom: 63px;left: 0;
+        @media screen and (max-width: 840px) {left: 65px;}
       }
+      @media screen and (max-width: 840px) {left: 67px;}
 
     }
     .arrow_right {
@@ -625,10 +634,10 @@ body {
       height: 23px;
       cursor: pointer;
       .image('pic/arrow_right_schedule.png','pic/arrow_right_schedule_over.png');
-      &:hover {bottom: 63px;left: 693px;}
-      @media screen and (max-width: 840px) {
-        left: 760px;
+      &:hover {bottom: 63px;left: 693px;
+        @media screen and (max-width: 840px) {left: 758px;}
       }
+      @media screen and (max-width: 840px) {left: 760px;}
 
     }
     .fon_slider_schedule {
