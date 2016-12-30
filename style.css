@@ -150,7 +150,7 @@
 .menu_adaptive {
   position: absolute;
   top: 0;
-  left: 750px;
+  left: 680px;
   display: none;
   width: 125px;
   height: 37px;
@@ -164,6 +164,7 @@
   padding-left: 30px;
   font-family: 'Cuprum Bold', serif;
   font-size: 25px;
+  cursor: pointer;
 }
 @media screen and (max-width: 841px) {
   .menu_adaptive {
@@ -175,6 +176,22 @@
   top: 10px;
   right: 15px;
 }
+.wrap_find_adaptive {
+  display: none;
+}
+@media screen and (max-width: 841px) {
+  .wrap_find_adaptive {
+    display: block;
+    position: absolute;
+    right: 290px;
+    top: 25px;
+    width: 265px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px gray;
+  }
+}
 .find_adaptive {
   display: none;
 }
@@ -182,12 +199,12 @@
   .find_adaptive {
     display: block;
     position: absolute;
-    right: 250px;
-    top: 35px;
+    right: 300px;
+    top: 32px;
     width: 245px;
     height: 30px;
     background-color: #eaecee;
-    border: 1px solid gray;
+    border: 1px solid #d3d3d3;
     border-radius: 5px;
   }
   .find_adaptive:hover {
@@ -204,6 +221,113 @@
   }
   .find_adaptive img {
     float: right;
+    cursor: pointer;
+  }
+}
+.social_net_adaptive {
+  display: none;
+}
+@media screen and (max-width: 840px) {
+  .social_net_adaptive {
+    position: absolute;
+    display: block;
+    top: 20px;
+    left: 220px;
+    width: 165px;
+    height: 25px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .social_net_adaptive .text {
+    position: absolute;
+    top: 2px;
+    left: 15px;
+    font-family: 'Tahoma Regular', serif;
+    font-size: 11px;
+  }
+  .social_net_adaptive .net1 {
+    display: inline-block;
+    background-image: url('pic/net_1.png');
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    position: relative;
+    top: 10px;
+    margin-right: 2px;
+    cursor: pointer;
+  }
+  .social_net_adaptive .net1:hover {
+    opacity: 0.5;
+  }
+  .social_net_adaptive .net2 {
+    display: inline-block;
+    background-image: url('pic/net_2.png');
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    position: relative;
+    top: 10px;
+    margin-right: 2px;
+    cursor: pointer;
+  }
+  .social_net_adaptive .net2:hover {
+    opacity: 0.5;
+  }
+  .social_net_adaptive .net3 {
+    display: inline-block;
+    background-image: url('pic/net_3.png');
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    position: relative;
+    top: 10px;
+    margin-right: 2px;
+    cursor: pointer;
+  }
+  .social_net_adaptive .net3:hover {
+    opacity: 0.5;
+  }
+  .social_net_adaptive .net4 {
+    display: inline-block;
+    background-image: url('pic/net_4.png');
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    position: relative;
+    top: 10px;
+    margin-right: 2px;
+    cursor: pointer;
+  }
+  .social_net_adaptive .net4:hover {
+    opacity: 0.5;
+  }
+  .social_net_adaptive .net5 {
+    display: inline-block;
+    background-image: url('pic/net_5.png');
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    position: relative;
+    top: 10px;
+    margin-right: 2px;
+    cursor: pointer;
+  }
+  .social_net_adaptive .net5:hover {
+    opacity: 0.5;
+  }
+  .social_net_adaptive .net6 {
+    display: inline-block;
+    background-image: url('pic/net_6.png');
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    position: relative;
+    top: 10px;
+    margin-right: 2px;
+    cursor: pointer;
+  }
+  .social_net_adaptive .net6:hover {
+    opacity: 0.5;
   }
 }
 body {
@@ -228,6 +352,11 @@ body {
   border-radius: 5px;
   padding: 10px;
   box-shadow: 0 0 3px gray;
+}
+@media screen and (max-width: 840px) {
+  .social_net {
+    display: none;
+  }
 }
 .social_net .net1 {
   display: block;

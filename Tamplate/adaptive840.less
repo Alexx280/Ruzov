@@ -1,7 +1,8 @@
+
 .menu_adaptive {
   position: absolute;
   top:0;
-  left: 750px;
+  left: 680px;
   display: none;
   width:  125px;
   height: 37px;
@@ -15,6 +16,7 @@
   padding-left: 30px;
   font-family: 'Cuprum Bold', serif;
   font-size: 25px;
+  cursor: pointer;
   @media screen and (max-width: 841px) {
     display: block;
   }
@@ -24,18 +26,34 @@
     right: 15px;
   }
 }
+.wrap_find_adaptive {
+  display: none;
+  @media screen and (max-width: 841px)
+  {
+    display: block;
+    position: absolute;
+    right: 290px;
+    top: 25px;
+    width: 265px;
+    height: 45px;
+    background-color: #fff;
+    //border: 1px solid gray;
+    border-radius: @radius;
+    box-shadow: 1px 1px 4px gray;
+  }
+}
 .find_adaptive {
   display: none;
   @media screen and (max-width: 841px)
   {
     display: block;
     position: absolute;
-    right: 250px;
-    top: 35px;
+    right: 300px;
+    top: 32px;
     width: 245px;
     height: 30px;
     background-color: #eaecee;
-    border: 1px solid gray;
+    border: 1px solid #d3d3d3;
     border-radius: @radius;
     &:hover {
       background-color: #eaecee;
@@ -49,6 +67,46 @@
       border: none;
       background-color: #eaecee;
     }
-    img {float: right;}
+    img {float: right; cursor: pointer}
+  }
+}
+.social_net_adaptive {
+  display: none;
+  @media screen and (max-width: 840px)
+  {
+    position: absolute;
+    display: block;
+    top: 20px;
+    left: 220px;
+    //background-color: white;
+    width: 165px;
+    height: 25px;
+    border-radius: @radius;
+    padding:10px;
+    .text {
+      position: absolute;
+      top:2px;
+      left:15px;
+      font-family: 'Tahoma Regular', serif;
+      font-size: 11px;
+    }
+    .net(@a){
+      display: inline-block;
+      background-image: url(@a);
+      &:hover {opacity: 0.5};
+      background-repeat: no-repeat;
+      width: 23px;
+      height: 23px;
+      position: relative;
+      top:10px;
+      margin-right: 2px;
+      cursor: pointer;
+    }
+    .net1 {.net('pic/net_1.png')}
+    .net2 {.net('pic/net_2.png')}
+    .net3 {.net('pic/net_3.png')}
+    .net4 {.net('pic/net_4.png')}
+    .net5 {.net('pic/net_5.png')}
+    .net6 {.net('pic/net_6.png')}
   }
 }
