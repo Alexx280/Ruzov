@@ -788,7 +788,10 @@ body {
 .inform_area {
   .main {
     height: 1110px;
+    @media screen and (max-width: 840px) {width: 840px;}
     .doing_and_spirit {
+      position: relative;
+      @media screen and (max-width: 840px) {left: 50px;}
       height: 270px;
       width: auto;
       .doing_chapter {
@@ -802,6 +805,7 @@ body {
       position: relative;
       height: 390px;
       width: auto;
+      @media screen and (max-width: 840px) {width: 820px; left: 20px;}
       .text_last_news {
         .head_text(0; 35px);
       }
@@ -809,14 +813,16 @@ body {
         .icon(0,0, 'pic/Last_news.png');
       }
       .link_all_news {
-        .link_next(15px, 100px, 5px);
+        .link_next(15px, 120px, 25px);
       }
       .all_news {
         .news1 {.news(@pic:"pic/last_news_img1.png")}
         .news2 {.news(@pic:"pic/last_news_img2.png")}
         .news3 {.news(@pic:"pic/last_news_img3.png")}
         .news4 {.news(@pic:"pic/last_news_img4.png")}
-        .news5 {.news(@pic:"pic/last_news_img5.png")}
+        .news5 {.news(@pic:"pic/last_news_img5.png");
+        @media screen and (max-width: 840px) {display: none;}
+        }
       }
     }
     .answer_on_qwestion {
@@ -826,6 +832,7 @@ body {
       bottom: 55px;
       height: 390px;
       width: 700px;
+      @media screen and (max-width: 840px) {width: 540px; margin: 0 20px;}
       .shadow();
       .ask_icon {
         .icon(28px, 20px, 'pic/answer_on_quesrion.png');}
@@ -833,7 +840,8 @@ body {
         .head_text(25px; 55px);
       }
       .link_all_question {
-        .link_next(35px, 130px, 5px)
+        .link_next(35px, 130px, 5px);
+      @media screen and (max-width: 840px) {.link_next(35px, 150px, 15px);}
       }
       .question_answer1 {
         .question_answer(70px);

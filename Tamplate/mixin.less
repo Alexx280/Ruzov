@@ -103,6 +103,7 @@
   display: inline-block;
   top:45px;
   margin-left:8px;
+  @media screen and (max-width: 840px) {margin-right:10px;}
   height: 275px;
   width: 180px;
   vertical-align:top;
@@ -162,6 +163,7 @@
 .question_answer(@top_qa){
   position: relative;
   width:650px;
+  @media screen and (max-width: 840px) {width: 520px;}
   height:110px;
   left:20px;
   top:@top_qa;
@@ -176,9 +178,11 @@
   .second {
     font-family: 'Tahoma Regular', serif;
     margin-top: -10px;
+    @media screen and (max-width: 840px) {width: 470px;}
   }
   .points {
     width: 500px;
+    @media screen and (max-width: 840px) {width: 350px;}
     white-space: nowrap; /* Отменяем перенос текста */
     overflow: hidden; /* Обрезаем содержимое */
     padding: 5px; /* Поля */
@@ -189,6 +193,7 @@
     right: 0;
     bottom: 15px;
     width: 105px;
+    @media screen and (max-width: 840px) {width: 115px; right: 8px;}
     height: 20px;
     color: @blue_text;
     text-decoration-line: underline;

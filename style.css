@@ -1927,9 +1927,20 @@ body {
 .inform_area .main {
   height: 1110px;
 }
+@media screen and (max-width: 840px) {
+  .inform_area .main {
+    width: 840px;
+  }
+}
 .inform_area .main .doing_and_spirit {
+  position: relative;
   height: 270px;
   width: auto;
+}
+@media screen and (max-width: 840px) {
+  .inform_area .main .doing_and_spirit {
+    left: 50px;
+  }
 }
 .inform_area .main .doing_and_spirit .doing_chapter {
   position: relative;
@@ -2188,6 +2199,12 @@ body {
   height: 390px;
   width: auto;
 }
+@media screen and (max-width: 840px) {
+  .inform_area .main .last_news {
+    width: 820px;
+    left: 20px;
+  }
+}
 .inform_area .main .last_news .text_last_news {
   position: absolute;
   top: 0;
@@ -2209,8 +2226,8 @@ body {
 .inform_area .main .last_news .link_all_news {
   position: absolute;
   top: 15px;
-  right: 5px;
-  width: 100px;
+  right: 25px;
+  width: 120px;
   height: 20px;
   font-weight: bold;
   font-size: 12px;
@@ -2230,6 +2247,11 @@ body {
   height: 275px;
   width: 180px;
   vertical-align: top;
+}
+@media screen and (max-width: 840px) {
+  .inform_area .main .last_news .all_news .news1 {
+    margin-right: 10px;
+  }
 }
 .inform_area .main .last_news .all_news .news1:hover .fon .image_art_shadow {
   opacity: 0;
@@ -2297,6 +2319,11 @@ body {
   width: 180px;
   vertical-align: top;
 }
+@media screen and (max-width: 840px) {
+  .inform_area .main .last_news .all_news .news2 {
+    margin-right: 10px;
+  }
+}
 .inform_area .main .last_news .all_news .news2:hover .fon .image_art_shadow {
   opacity: 0;
 }
@@ -2362,6 +2389,11 @@ body {
   height: 275px;
   width: 180px;
   vertical-align: top;
+}
+@media screen and (max-width: 840px) {
+  .inform_area .main .last_news .all_news .news3 {
+    margin-right: 10px;
+  }
 }
 .inform_area .main .last_news .all_news .news3:hover .fon .image_art_shadow {
   opacity: 0;
@@ -2429,6 +2461,11 @@ body {
   width: 180px;
   vertical-align: top;
 }
+@media screen and (max-width: 840px) {
+  .inform_area .main .last_news .all_news .news4 {
+    margin-right: 10px;
+  }
+}
 .inform_area .main .last_news .all_news .news4:hover .fon .image_art_shadow {
   opacity: 0;
 }
@@ -2495,6 +2532,11 @@ body {
   width: 180px;
   vertical-align: top;
 }
+@media screen and (max-width: 840px) {
+  .inform_area .main .last_news .all_news .news5 {
+    margin-right: 10px;
+  }
+}
 .inform_area .main .last_news .all_news .news5:hover .fon .image_art_shadow {
   opacity: 0;
 }
@@ -2552,6 +2594,11 @@ body {
 .inform_area .main .last_news .all_news .news5 .text_art .link a {
   font-family: 'Tahoma Regular', serif;
 }
+@media screen and (max-width: 840px) {
+  .inform_area .main .last_news .all_news .news5 {
+    display: none;
+  }
+}
 .inform_area .main .answer_on_qwestion {
   position: absolute;
   background-color: #ffffff;
@@ -2560,6 +2607,12 @@ body {
   height: 390px;
   width: 700px;
   box-shadow: 0 0 3px gray;
+}
+@media screen and (max-width: 840px) {
+  .inform_area .main .answer_on_qwestion {
+    width: 540px;
+    margin: 0 20px;
+  }
 }
 .inform_area .main .answer_on_qwestion .ask_icon {
   position: absolute;
@@ -2595,6 +2648,24 @@ body {
 .inform_area .main .answer_on_qwestion .link_all_question a:hover {
   color: orange;
 }
+@media screen and (max-width: 840px) {
+  .inform_area .main .answer_on_qwestion .link_all_question {
+    position: absolute;
+    top: 35px;
+    right: 15px;
+    width: 150px;
+    height: 20px;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Tahoma Bold', serif;
+  }
+  .inform_area .main .answer_on_qwestion .link_all_question a {
+    color: #16557C;
+  }
+  .inform_area .main .answer_on_qwestion .link_all_question a:hover {
+    color: orange;
+  }
+}
 .inform_area .main .answer_on_qwestion .question_answer1 {
   position: relative;
   width: 650px;
@@ -2606,6 +2677,11 @@ body {
   padding-top: 0;
   border-bottom: 1px solid gray;
 }
+@media screen and (max-width: 840px) {
+  .inform_area .main .answer_on_qwestion .question_answer1 {
+    width: 520px;
+  }
+}
 .inform_area .main .answer_on_qwestion .question_answer1 .first {
   font-weight: bold;
   color: #16557C;
@@ -2615,6 +2691,11 @@ body {
 .inform_area .main .answer_on_qwestion .question_answer1 .second {
   font-family: 'Tahoma Regular', serif;
   margin-top: -10px;
+}
+@media screen and (max-width: 840px) {
+  .inform_area .main .answer_on_qwestion .question_answer1 .second {
+    width: 470px;
+  }
 }
 .inform_area .main .answer_on_qwestion .question_answer1 .points {
   width: 500px;
@@ -2627,6 +2708,11 @@ body {
   text-overflow: ellipsis;
   /* Многоточие */
 }
+@media screen and (max-width: 840px) {
+  .inform_area .main .answer_on_qwestion .question_answer1 .points {
+    width: 350px;
+  }
+}
 .inform_area .main .answer_on_qwestion .question_answer1 .read_all {
   position: absolute;
   right: 0;
@@ -2637,6 +2723,12 @@ body {
   text-decoration-line: underline;
   font-family: 'Tahoma Regular', serif;
   cursor: pointer;
+}
+@media screen and (max-width: 840px) {
+  .inform_area .main .answer_on_qwestion .question_answer1 .read_all {
+    width: 115px;
+    right: 8px;
+  }
 }
 .inform_area .main .answer_on_qwestion .question_answer1 .read_all:hover {
   color: orange;
@@ -2651,6 +2743,11 @@ body {
   font-size: 13px;
   padding-top: 0;
 }
+@media screen and (max-width: 840px) {
+  .inform_area .main .answer_on_qwestion .question_answer2 {
+    width: 520px;
+  }
+}
 .inform_area .main .answer_on_qwestion .question_answer2 .first {
   font-weight: bold;
   color: #16557C;
@@ -2660,6 +2757,11 @@ body {
 .inform_area .main .answer_on_qwestion .question_answer2 .second {
   font-family: 'Tahoma Regular', serif;
   margin-top: -10px;
+}
+@media screen and (max-width: 840px) {
+  .inform_area .main .answer_on_qwestion .question_answer2 .second {
+    width: 470px;
+  }
 }
 .inform_area .main .answer_on_qwestion .question_answer2 .points {
   width: 500px;
@@ -2672,6 +2774,11 @@ body {
   text-overflow: ellipsis;
   /* Многоточие */
 }
+@media screen and (max-width: 840px) {
+  .inform_area .main .answer_on_qwestion .question_answer2 .points {
+    width: 350px;
+  }
+}
 .inform_area .main .answer_on_qwestion .question_answer2 .read_all {
   position: absolute;
   right: 0;
@@ -2682,6 +2789,12 @@ body {
   text-decoration-line: underline;
   font-family: 'Tahoma Regular', serif;
   cursor: pointer;
+}
+@media screen and (max-width: 840px) {
+  .inform_area .main .answer_on_qwestion .question_answer2 .read_all {
+    width: 115px;
+    right: 8px;
+  }
 }
 .inform_area .main .answer_on_qwestion .question_answer2 .read_all:hover {
   color: orange;
