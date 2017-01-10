@@ -1930,6 +1930,7 @@ body {
 @media screen and (max-width: 840px) {
   .inform_area .main {
     width: 840px;
+    height: 1530px;
   }
 }
 .inform_area .main .doing_and_spirit {
@@ -2612,6 +2613,7 @@ body {
   .inform_area .main .answer_on_qwestion {
     width: 540px;
     margin: 0 20px;
+    bottom: 480px;
   }
 }
 .inform_area .main .answer_on_qwestion .ask_icon {
