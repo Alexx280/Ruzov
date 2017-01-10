@@ -108,3 +108,81 @@
     .net6 {.net('pic/net_6.png')}
   }
 }
+.chanal_area_840  {
+  display: none;
+  @media screen and (max-width: 840px)
+  {
+    background-image: url('pic/our_channal.png');
+    position: inherit;
+    top: 430px;
+    left: 0;
+    display: inline-block;
+    float: left;
+    height: 400px;
+    width: @width_area;
+  }
+}
+.dobro_shop_840  {
+  display: none;
+  @media screen and (max-width: 840px)
+  {
+    background-image: url('pic/dobro_shop_840.png');
+    position: relative;
+    top: 430px;
+    left: 30px;
+    display: inline-block;
+    float: left;
+    height: 170px;
+    width: 548px;
+  }
+}
+.book_shop_840  {
+  display: none;
+  @media screen and (max-width: 840px)
+  {
+    background-color: white;
+    position: relative;
+    top: 440px;
+    left: 30px;
+    display: inline-block;
+    float: left;
+    height: 220px;
+    width: 548px;
+    border-radius: @radius;
+    .book_img {
+      background-image: url('pic/book.png');
+      position: relative;
+      top: 10px;
+      left: 10px;
+      display: inline-block;
+      float: left;
+      height: 200px;
+      width: 210px;
+      background-position: bottom;
+    }
+    .book_article {
+      .head_text(15px; 15px;);
+      width: 300px;
+      top: 10px;
+      left: 220px;
+      font-size: 21px;
+    }
+    .book_about {
+      position: absolute;
+      top: 60px;
+      left: 200px;
+      width: 320px;
+      height: 200px;
+      font-size: 14px;
+    }
+    .buy_button {
+      position: absolute;
+      bottom: 15px;
+      left:200px;
+      height: 33px;
+      width: 200px;
+      cursor: pointer;
+      .image('pic/Buy.png','pic/Buy_over.png');
+    }
+  }
+}

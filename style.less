@@ -412,7 +412,7 @@ body {
     .head_text(10px; 55px;)
   }
   .text_next {
-    .link_next(15px, 100px, -20px)
+    .link_next(15px, 100px, 10px)
   }
   .date_seminars {
     position: absolute;
@@ -914,9 +914,18 @@ body {
   .main {
     height: 255px;
     .all_links {
-      .link1 {.links}
-      .link2 {.links}
-      .link3 {.links}
+      .link1 {.links;
+        @media screen and (max-width: 840px)
+        {left: 50px;}
+      }
+      .link2 {.links;
+        @media screen and (max-width: 840px)
+        {left: 50px;}
+      }
+      .link3 {.links;
+        @media screen and (max-width: 840px)
+        {display: none}
+      }
     }
     .subscribe {
       position: absolute;
@@ -924,6 +933,8 @@ body {
       height: 65px;
       width: 330px;
       margin-left: 10px;
+      @media screen and (max-width: 840px)
+      {left: 30px;}
       .text {color: white; font-size: 13px;}
       .input_area {
         position: absolute;
@@ -957,6 +968,8 @@ body {
       position: absolute;
       top: 0 ;
       left: 530px;
+      @media screen and (max-width: 840px)
+      {left: 440px;}
       .link4 {.links_big; font-family: 'Cuprum Bold', serif;}
       .link5 {.links_big; font-family: 'Cuprum Bold', serif;}
     }
@@ -979,6 +992,8 @@ body {
     width: 221px;
     cursor: pointer;
     .image('pic/Support_project_small.png','pic/Support_project_small_over.png');
+    @media screen and (max-width: 840px)
+    {left: 220px;}
   }
   .consult_button {
     position: absolute;
@@ -989,6 +1004,8 @@ body {
     cursor: pointer;
     .image('pic/Consult.png','pic/Consult_over.png');
     background-repeat: no-repeat;
+    @media screen and (max-width: 840px)
+    {left: 460px;}
   }
   .rights {
     position: absolute;
@@ -998,5 +1015,11 @@ body {
     height: 65px;
     font-family: 'Tahoma Regular', serif;
     font-size: 12px;
+    @media screen and (max-width: 840px)
+    { position: absolute;
+      display: inline-block;
+      left: 650px;
+      top: 45px;
+    }
   }
 }
