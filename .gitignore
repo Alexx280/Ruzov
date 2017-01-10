@@ -1,5 +1,5 @@
 .gitignore
-.idea/
+.idea/workspace.xml
 dist/
 node_modules/
 temp/
